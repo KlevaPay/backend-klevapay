@@ -24,6 +24,8 @@ const { swaggerSpec, swaggerUi, swaggerUiOptions } = require('./config/swagger')
 
 // Create Express application
 const app = express();
+app.use(express.json());
+
 
 // Trust proxy for accurate IP addresses in production
 app.set('trust proxy', 1);
@@ -98,6 +100,8 @@ const limiter = rateLimit({
 });
 
 app.use('/api/', limiter);
+app.use('/api/payment-intents', require('./routes/paymentIntentRoute'));
+
 
 
 // ================================================================
