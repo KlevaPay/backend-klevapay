@@ -1,0 +1,1904 @@
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '62dryhs2m',
+  name: 'ApiError',
+  message: 'Application Error Route /assets/favicon.ico not found',
+  stack: 'ApiError: Route /assets/favicon.ico not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:82:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/assets/favicon.ico',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 16:22:35'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 't0hkse5ft',
+  name: 'ApiError',
+  message: 'Application Error Route /assets/favicon.ico not found',
+  stack: 'ApiError: Route /assets/favicon.ico not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:82:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/assets/favicon.ico',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 16:22:36'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:18:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:26:59'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:19:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:28:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 16:28:28'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:18:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:29:03'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:18:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:29:58'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:18:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:30:05'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ReferenceError',
+  message: '🚨 Uncaught Exception detected: PORT is not defined',
+  stack: 'ReferenceError: PORT is not defined\n' +
+    '    at Server.serverError (/Users/macbook/W3_finalProject/backend-klevapay/server.js:18:70)\n' +
+    '    at Server.emit (node:events:518:28)\n' +
+    '    at emitErrorNT (node:net:1976:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  level: 'error',
+  timestamp: '2025-10-13 16:30:19'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 16:33:24'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 16:33:41'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'rn3cky6p7',
+  name: 'ApiError',
+  message: 'Application Error Route /favicon.ico not found',
+  stack: 'ApiError: Route /favicon.ico not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:82:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/favicon.ico',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 16:35:49'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '5xy07mcfs',
+  name: 'ApiError',
+  message: 'Application Error Route /assets/favicon.ico not found',
+  stack: 'ApiError: Route /assets/favicon.ico not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:82:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/assets/favicon.ico',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 16:36:35'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 16:43:29'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '7lygla25i',
+  name: 'ApiError',
+  message: 'Application Error Route /api/ not found',
+  stack: 'ApiError: Route /api/ not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/11.6.1 Chrome/138.0.7204.185 Electron/37.2.6 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 17:25:33'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'w1vujczaz',
+  name: 'ApiError',
+  message: 'Application Error Route /api not found',
+  stack: 'ApiError: Route /api not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/11.6.1 Chrome/138.0.7204.185 Electron/37.2.6 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 17:25:36'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'qcsbjz3kn',
+  name: 'ApiError',
+  message: 'Application Error Route /api not found',
+  stack: 'ApiError: Route /api not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api',
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/11.6.1 Chrome/138.0.7204.185 Electron/37.2.6 Safari/537.36',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 17:25:38'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'vdo66fp1c',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:14'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'fst9v6ebo',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:25'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '49otzoj5k',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:33'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'muiy9px7t',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:34'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'c4fr4wezc',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:34'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'ysri03z8e',
+  name: 'ApiError',
+  message: 'Application Error Route /api//register not found',
+  stack: 'ApiError: Route /api//register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:27:34'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '0qkrdjtdo',
+  name: 'ApiError',
+  message: 'Application Error Route /api//auth/register not found',
+  stack: 'ApiError: Route /api//auth/register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//auth/register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:28:42'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'gv506d3er',
+  name: 'ApiError',
+  message: 'Application Error Route /api//auth/register not found',
+  stack: 'ApiError: Route /api//auth/register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//auth/register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:28:44'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '9rf24dnen',
+  name: 'ApiError',
+  message: 'Application Error Route /api//auth/register not found',
+  stack: 'ApiError: Route /api//auth/register not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//auth/register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:28:44'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '4wv04w3lw',
+  name: 'ApiError',
+  message: 'Application Error Route /api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123! not found',
+  stack: 'ApiError: Route /api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123! not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123!',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:31:03'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'qyy58cm6i',
+  name: 'ApiError',
+  message: 'Application Error Route /api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123! not found',
+  stack: 'ApiError: Route /api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123! not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:87:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:103:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api//auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123!',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:31:26'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'j1wrmuz9a',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register?businessName%3A=Tech%20Innovations%20Ltd&email=merchant%40example.com&country=Nigeria&password=StrongPassword123!',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:31:38'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '6vr2yb3l4',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:35:08'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'wxqbw2266',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'insomnia/11.6.1',
+  ip: '::ffff:127.0.0.1',
+  level: 'error',
+  timestamp: '2025-10-13 17:35:26'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 17:38:22'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 17:48:43'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 17:53:23'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:02:33'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:04:07'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:05:18'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:06:13'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:07:09'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:08:17'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:08:52'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:08:52'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:03'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:03'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:11'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:11'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:27'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:27'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:38'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:38'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:50'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:09:50'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:09:53'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:10:01'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:10:01'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:10:03'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:18:37)\n' +
+    '    at new EmailService (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:10:10)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/services/sendEmail.js:338:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)',
+  timestamp: '2025-10-13 18:12:08'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:12:11'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:12:28'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'wahxznszm',
+  name: 'ApiError',
+  message: 'Application Error Invalid email or password',
+  stack: 'ApiError: Invalid email or password\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:267:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 401,
+  method: 'POST',
+  url: '/api/auth/login',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:14:59'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'dhfydc965',
+  name: 'ApiError',
+  message: 'Application Error No OTP found',
+  stack: 'ApiError: No OTP found\n' +
+    '    at ApiError.badRequest (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:27:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:129:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 400,
+  method: 'POST',
+  url: '/api/auth/verify-email',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:15:05'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:15:57'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:15:58'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:16:38'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:16:40'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'e5f64vt44',
+  name: 'ApiError',
+  message: 'Application Error No OTP found',
+  stack: 'ApiError: No OTP found\n' +
+    '    at ApiError.badRequest (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:27:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:129:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 400,
+  method: 'POST',
+  url: '/api/auth/verify-email',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:17:23'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:18:11'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:18:11'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:18:31'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:18:31'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'wu96dvq3m',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/reset-password',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:20:51'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'f61l6mctp',
+  name: 'ApiError',
+  message: 'Application Error No OTP found',
+  stack: 'ApiError: No OTP found\n' +
+    '    at ApiError.badRequest (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:27:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:430:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 400,
+  method: 'POST',
+  url: '/api/auth/reset-password',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:21:21'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:21:38'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:21:39'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'jl9dn3oia',
+  name: 'ApiError',
+  message: 'Application Error Please wait 40 seconds before requesting a new code.',
+  stack: 'ApiError: Please wait 40 seconds before requesting a new code.\n' +
+    '    at ApiError.badRequest (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:27:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:209:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 400,
+  method: 'POST',
+  url: '/api/auth/resend-otp',
+  userAgent: 'curl/8.7.1',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:22:37'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:23:56'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:23:56'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:24:49'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 18:24:49'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'r1buppyyv',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:45:05'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'xxns6iaym',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:46:08'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'g96w8r0eq',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:46:55'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'y34zgr4vm',
+  name: 'ApiError',
+  message: 'Application Error Validation failed',
+  stack: 'ApiError: Validation failed\n' +
+    '    at ApiError.validation (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:77:12)\n' +
+    '    at validationErrorHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:121:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at middleware (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express-validator/lib/middlewares/check.js:16:13)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 422,
+  method: 'POST',
+  url: '/api/auth/login?email=onenvictor@gmail.com&password=Mercelina1234@',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 18:51:50'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:31'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:32'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:44'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:45'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:54'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:10:55'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:02'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:02'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:09'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:10'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:52'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:11:54'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:00'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:01'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:08'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:09'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:16'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:16'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:24'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:24'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:34'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:34'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:47'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:48'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:56'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:12:57'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:04'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:05'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:13'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:14'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:24'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:24'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:13:59'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:14:00'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:14:35'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:14:36'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:14:53'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:14:54'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:15:13'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:15:13'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:15:38'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:15:41'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:16:05'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:16:05'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:16:38'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:16:39'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:21'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:21'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:40'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:40'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:52'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:17:52'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:33'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:33'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:47'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:18:48'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:19:14'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:19:14'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:19:45'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:19:45'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:23'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:23'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:45'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:46'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:57'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:20:57'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:04'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:06'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:12'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:19'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:19'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:33'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:33'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:49'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:21:49'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:15'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:15'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:28'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:28'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:42'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:22:42'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:23:41'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-13 19:23:41'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'wjxl6qpgq',
+  name: 'ApiError',
+  message: 'Application Error Email address is already registered',
+  stack: 'ApiError: Email address is already registered\n' +
+    '    at ApiError.conflict (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:67:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/authController.js:26:20\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 409,
+  method: 'POST',
+  url: '/api/auth/register',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-13 19:24:22'
+}

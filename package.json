@@ -1,11 +1,55 @@
 {
   "name": "backend-kleva",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'Building KlevaPay Backend...' && npm install",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "author": "",
+  "author": "KlevaPay Team",
   "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlevaPay/backend-klevapay.git"
+  },
+  "keywords": ["payment", "gateway", "merchant", "api", "nodejs", "express", "mongodb"],
+  "bugs": {
+    "url": "https://github.com/KlevaPay/backend-klevapay/issues"
+  },
+  "homepage": "https://github.com/KlevaPay/backend-klevapay#readme",
+  "description": "KlevaPay merchant payment gateway backend API",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "nodemailer": "^6.9.7",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "winston": "^3.11.0",
+    "http-status-codes": "^2.3.0",
+    "swagger-ui-express": "^5.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "express-rate-limit": "^7.1.5",
+    "express-async-handler": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.53.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
