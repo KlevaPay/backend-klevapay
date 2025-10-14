@@ -1,0 +1,4543 @@
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:42:14 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 45346,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93003776,
+      heapTotal: 56721408,
+      heapUsed: 24654128,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 0.7, 0.65, 0.98 ], uptime: 42169.02 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:42:14'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:42:43 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 45412,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92643328,
+      heapTotal: 56721408,
+      heapUsed: 24723104,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.24, 0.78, 1.01 ], uptime: 42198.29 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:42:43'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:42:52 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 45468,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94248960,
+      heapTotal: 56721408,
+      heapUsed: 24832664,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.22, 0.79, 1.01 ], uptime: 42207.15 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:42:52'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:42:57 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 45486,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94752768,
+      heapTotal: 56721408,
+      heapUsed: 24898184,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.28, 0.81, 1.02 ], uptime: 42212.35 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:42:57'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:46:14 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 45759,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94617600,
+      heapTotal: 56721408,
+      heapUsed: 24854816,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.27, 0.95, 1.02 ], uptime: 42409.41 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:46:14'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 01:51:13 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 46334,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 91672576,
+      heapTotal: 56983552,
+      heapUsed: 25100664,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.33, 0.89, 0.94 ], uptime: 42708.15 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 01:51:13'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:45:45 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 48152,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94523392,
+      heapTotal: 56459264,
+      heapUsed: 24935144,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.23, 1.2, 1.07 ], uptime: 74780.04 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:45:45'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:49:51 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 48748,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93937664,
+      heapTotal: 56983552,
+      heapUsed: 25653952,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.35, 1.84, 1.36 ], uptime: 75026.07 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:49:51'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:49:58 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 48804,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94584832,
+      heapTotal: 56721408,
+      heapUsed: 25657360,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.14, 1.81, 1.36 ], uptime: 75033.31 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:49:58'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:51:19 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49004,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94539776,
+      heapTotal: 56983552,
+      heapUsed: 25142232,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.14, 2.12, 1.5 ], uptime: 75113.6 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:51:19'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:53:11 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49270,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92938240,
+      heapTotal: 56983552,
+      heapUsed: 24966552,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.72, 1.98, 1.52 ], uptime: 75226.19 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:53:11'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:53:43 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49331,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93122560,
+      heapTotal: 56983552,
+      heapUsed: 25020360,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.94, 2.01, 1.55 ], uptime: 75258.43 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:53:43'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:53:49 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49391,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93769728,
+      heapTotal: 56459264,
+      heapUsed: 24881208,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.95, 2.01, 1.55 ], uptime: 75264.16 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:53:49'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:53:57 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49423,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92622848,
+      heapTotal: 56983552,
+      heapUsed: 25199808,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.52, 2.13, 1.59 ], uptime: 75271.81 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:53:57'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:2:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:01 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49446,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94171136,
+      heapTotal: 56983552,
+      heapUsed: 25139176,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.52, 2.13, 1.59 ], uptime: 75275.67 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:01'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:13 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49476,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93413376,
+      heapTotal: 56983552,
+      heapUsed: 24986120,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.48, 2.14, 1.61 ], uptime: 75287.74 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:13'
+}
+{
+  error: ReferenceError: axios is not defined
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: axios is not defined\n' +
+    'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: 'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:21 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49507,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92975104,
+      heapTotal: 56983552,
+      heapUsed: 25012080,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.37, 2.12, 1.6 ], uptime: 75296.32 },
+  trace: [
+    {
+      column: 20,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 11,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:21'
+}
+{
+  error: ReferenceError: axios is not defined
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: axios is not defined\n' +
+    'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: 'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:11:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/opayService.js:2:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:28 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49538,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 95457280,
+      heapTotal: 56983552,
+      heapUsed: 24808512,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.16, 2.29, 1.67 ], uptime: 75302.65 },
+  trace: [
+    {
+      column: 20,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 11,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:28'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:36 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49559,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93310976,
+      heapTotal: 56983552,
+      heapUsed: 25071920,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.99, 2.27, 1.66 ], uptime: 75310.95 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:36'
+}
+{
+  error: Error: Cannot find module 'axios'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/config/opay.js
+  - /home/gafar/kleva/backend-klevapay/services/opayService.js
+  - /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js
+  - /home/gafar/kleva/backend-klevapay/routes/opayRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      '/home/gafar/kleva/backend-klevapay/services/opayService.js',
+      '/home/gafar/kleva/backend-klevapay/controllers/opayControllers.js',
+      '/home/gafar/kleva/backend-klevapay/routes/opayRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module 'axios'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/config/opay.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/services/opayService.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/controllers/opayControllers.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/opayRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/opay.js:1:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 10:54:42 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 49595,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92704768,
+      heapTotal: 56983552,
+      heapUsed: 25142200,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.99, 2.3, 1.68 ], uptime: 75316.77 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/home/gafar/kleva/backend-klevapay/config/opay.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 10:54:42'
+}
+{
+  error: Error: Cannot find module '../controllers/paymentintegrationController'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:38:29 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68084,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92975104,
+      heapTotal: 56983552,
+      heapUsed: 25874360,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 0.99, 1.12, 1.2 ], uptime: 92340.1 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:38:29'
+}
+{
+  error: Error: Cannot find module '../controllers/paymentintegrationController'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:38:35 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68158,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 95133696,
+      heapTotal: 56721408,
+      heapUsed: 24751576,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.07, 1.13, 1.2 ], uptime: 92346.83 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:38:35'
+}
+{
+  error: Error: Cannot find module '../controllers/paymentintegrationController'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:39:15 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68266,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93896704,
+      heapTotal: 56983552,
+      heapUsed: 24894688,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.06, 1.37, 1.28 ], uptime: 92386.18 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:39:15'
+}
+{
+  error: Error: Cannot find module '../controllers/paymentintegrationController'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:39:19 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68318,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 95191040,
+      heapTotal: 56983552,
+      heapUsed: 24962376,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.06, 1.38, 1.29 ], uptime: 92390.41 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:39:19'
+}
+{
+  error: Error: Cannot find module '../controllers/paymentintegrationController'
+  Require stack:
+  - /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js
+  - /home/gafar/kleva/backend-klevapay/app.js
+  - /home/gafar/kleva/backend-klevapay/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+      at Module._load (node:internal/modules/cjs/loader:1051:27)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      '/home/gafar/kleva/backend-klevapay/app.js',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  stack: "Error: Cannot find module '../controllers/paymentintegrationController'\n" +
+    'Require stack:\n' +
+    '- /home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/app.js\n' +
+    '- /home/gafar/kleva/backend-klevapay/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1051:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js:10:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:39:26 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68342,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93908992,
+      heapTotal: 56721408,
+      heapUsed: 24848264,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 1.98, 1.38, 1.29 ], uptime: 92397.47 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1225,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1051,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/paymentintegrationRoute.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:39:26'
+}
+{
+  error: ReferenceError: axios is not defined
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/flutterwave.js:9:19)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/paymentIntegrationServices.js:2:23)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: axios is not defined\n' +
+    'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/flutterwave.js:9:19)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/paymentIntegrationServices.js:2:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: 'ReferenceError: axios is not defined\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/flutterwave.js:9:19)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/paymentIntegrationServices.js:2:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Tue Oct 14 2025 15:40:07 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 68418,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 91815936,
+      heapTotal: 56721408,
+      heapUsed: 25112208,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.11, 1.48, 1.32 ], uptime: 92438.48 },
+  trace: [
+    {
+      column: 19,
+      file: '/home/gafar/kleva/backend-klevapay/config/flutterwave.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: '/home/gafar/kleva/backend-klevapay/services/paymentIntegrationServices.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-14 15:40:07'
+}
