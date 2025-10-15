@@ -1,0 +1,144 @@
+{
+  error: Error: Route.get() requires a callback function but got a [object Undefined]
+      at Route.<computed> [as get] (C:\Users\HP\Documents\klevapay\backend-kleva\node_modules\express\lib\router\route.js:216:15)
+      at proto.<computed> [as get] (C:\Users\HP\Documents\klevapay\backend-kleva\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\HP\Documents\klevapay\backend-kleva\routes\paymentIntentRoute.js:13:8)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (C:\Users\HP\Documents\klevapay\backend-kleva\app.js:104:33),
+  level: 'error',
+  message: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+    'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:216:15)\n' +
+    '    at proto.<computed> [as get] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\routes\\paymentIntentRoute.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\app.js:104:33)',
+  stack: 'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:216:15)\n' +
+    '    at proto.<computed> [as get] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\routes\\paymentIntentRoute.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\app.js:104:33)',
+  exception: true,
+  date: 'Wed Oct 15 2025 17:07:51 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 12392,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.17.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\server.js'
+    ],
+    memoryUsage: {
+      rss: 73277440,
+      heapTotal: 56995840,
+      heapUsed: 31901656,
+      external: 20584622,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 145174.953 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as get]',
+      line: 216,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js',
+      function: 'proto.<computed> [as get]',
+      line: 521,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\routes\\paymentIntentRoute.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\app.js',
+      function: null,
+      line: 104,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-15 17:07:51'
+}

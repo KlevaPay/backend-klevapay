@@ -3,610 +3,146 @@
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:12'
+  timestamp: '2025-10-15 17:11:20'
 }
 {
   message: '✅ Email service initialized successfully',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '✅ Database connected successfully',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '🚀 KlevaPay server listening on http://localhost:4000',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '📊 Environment: development',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '📝 API Documentation available at http://localhost:4000/api/docs',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:37:14'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs HTTP/1.1" 301 158 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '780udi1w0',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs/ HTTP/1.1" 200 3039 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '9f7kose58',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 200 155212 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'wivah5cck',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 200 22096 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'njnczfkhk',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 250335 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'njnczfkhk',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:37:26 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 200 1510217 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'njnczfkhk',
-  timestamp: '2025-10-13 22:37:26'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '5qafgekgq',
-  name: 'ApiError',
-  message: 'Application Error Validation failed',
-  stack: 'ApiError: Validation failed\n' +
-    '    at ApiError.validation (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:77:12)\n' +
-    '    at validationErrorHandler (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:130:28)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at middleware (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n' +
-    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
-  statusCode: 422,
-  method: 'POST',
-  url: '/api/auth/register',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:39:52'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:39:52 +0000] "POST /api/auth/register HTTP/1.1" 422 925 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '5qafgekgq',
-  timestamp: '2025-10-13 22:39:52'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2qqmsmh4q',
-  email: 'mirabeluregu@gmail.com',
-  businessName: 'Code Ninjas',
-  ip: '::1',
-  level: 'info',
-  message: 'Merchant registration attempt',
-  timestamp: '2025-10-13 22:40:17'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2qqmsmh4q',
-  to: 'mirabeluregu@gmail.com',
-  messageId: '<96ce91c9-7d70-7813-448d-b5516bc62d6b@gmail.com>',
-  businessName: 'Code Ninjas',
-  level: 'info',
-  message: 'OTP email sent successfully',
-  timestamp: '2025-10-13 22:40:22'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2qqmsmh4q',
-  userId: new ObjectId("68ed71c1b643ebf80f36de3b"),
-  email: 'mirabeluregu@gmail.com',
-  businessName: 'Code Ninjas',
-  emailSent: true,
-  level: 'info',
-  message: 'Merchant registered successfully',
-  timestamp: '2025-10-13 22:40:22'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:40:22 +0000] "POST /api/auth/register HTTP/1.1" 201 342 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2qqmsmh4q',
-  timestamp: '2025-10-13 22:40:22'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2hc7txzah',
-  email: 'mirabeluregu@gmail.com',
-  ip: '::1',
-  level: 'info',
-  message: 'Email verification attempt',
-  timestamp: '2025-10-13 22:44:03'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2hc7txzah',
-  to: 'mirabeluregu@gmail.com',
-  messageId: '<cf9acd70-430c-90b1-8cfe-69024d492a53@gmail.com>',
-  businessName: 'Code Ninjas',
-  level: 'info',
-  message: 'Welcome email sent successfully',
-  timestamp: '2025-10-13 22:44:09'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2hc7txzah',
-  userId: '68ed71c1b643ebf80f36de3b',
-  email: 'mirabeluregu@gmail.com',
-  level: 'info',
-  message: 'Token pair generated',
-  timestamp: '2025-10-13 22:44:09'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2hc7txzah',
-  userId: new ObjectId("68ed71c1b643ebf80f36de3b"),
-  email: 'mirabeluregu@gmail.com',
-  businessName: 'Code Ninjas',
-  level: 'info',
-  message: 'Email verified successfully',
-  timestamp: '2025-10-13 22:44:09'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:44:09 +0000] "POST /api/auth/verify-email HTTP/1.1" 200 1083 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '2hc7txzah',
-  timestamp: '2025-10-13 22:44:09'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'wyd2p7p2h',
-  email: 'merchant@example.com',
-  ip: '::1',
-  level: 'info',
-  message: 'Login attempt',
-  timestamp: '2025-10-13 22:45:24'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'wyd2p7p2h',
-  name: 'ApiError',
-  message: 'Application Error Invalid email or password',
-  stack: 'ApiError: Invalid email or password\n' +
-    '    at ApiError.unauthorized (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:37:12)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\authController.js:291:20\n' +
-    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
-  statusCode: 401,
-  method: 'POST',
-  url: '/api/auth/login',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:45:25'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:45:25 +0000] "POST /api/auth/login HTTP/1.1" 401 447 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'wyd2p7p2h',
-  timestamp: '2025-10-13 22:45:25'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'o8clluzcg',
-  email: 'mirabeluregu@gmail.com',
-  ip: '::1',
-  level: 'info',
-  message: 'Login attempt',
-  timestamp: '2025-10-13 22:45:49'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'o8clluzcg',
-  userId: '68ed71c1b643ebf80f36de3b',
-  email: 'mirabeluregu@gmail.com',
-  level: 'info',
-  message: 'Token pair generated',
-  timestamp: '2025-10-13 22:45:50'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'o8clluzcg',
-  userId: new ObjectId("68ed71c1b643ebf80f36de3b"),
-  email: 'mirabeluregu@gmail.com',
-  businessName: 'Code Ninjas',
-  level: 'info',
-  message: 'Login successful',
-  timestamp: '2025-10-13 22:45:50'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:45:50 +0000] "POST /api/auth/login HTTP/1.1" 200 1050 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: 'o8clluzcg',
-  timestamp: '2025-10-13 22:45:50'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '36nbnakuu',
-  email: 'mirabeluregu@gmail.com',
-  ip: '::1',
-  level: 'info',
-  message: 'Login attempt',
-  timestamp: '2025-10-13 22:50:18'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '36nbnakuu',
-  userId: '68ed71c1b643ebf80f36de3b',
-  email: 'mirabeluregu@gmail.com',
-  level: 'info',
-  message: 'Token pair generated',
-  timestamp: '2025-10-13 22:50:20'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '36nbnakuu',
-  userId: new ObjectId("68ed71c1b643ebf80f36de3b"),
-  email: 'mirabeluregu@gmail.com',
-  businessName: 'Code Ninjas',
-  level: 'info',
-  message: 'Login successful',
-  timestamp: '2025-10-13 22:50:20'
-}
-{
-  message: '::1 - - [13/Oct/2025:21:50:20 +0000] "POST /api/auth/login HTTP/1.1" 200 1089 "-" "PostmanRuntime/7.48.0"',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: '36nbnakuu',
-  timestamp: '2025-10-13 22:50:20'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: undefined,
-  name: 'ApiError',
-  message: 'Application Error Invalid or expired token',
-  stack: 'ApiError: Invalid or expired token\n' +
-    '    at ApiError.unauthorized (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:37:12)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
-    '    at Function.process_params (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
-    '    at Function.handle (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:175:3)',
-  statusCode: 401,
-  method: 'POST',
-  url: '/api/payment-intents',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:50:41'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: undefined,
-  name: 'ApiError',
-  message: 'Application Error Invalid or expired token',
-  stack: 'ApiError: Invalid or expired token\n' +
-    '    at ApiError.unauthorized (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:37:12)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
-    '    at Function.process_params (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
-    '    at Function.handle (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:175:3)',
-  statusCode: 401,
-  method: 'POST',
-  url: '/api/payment-intents',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:51:06'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  requestId: undefined,
-  name: 'TypeError',
-  message: "Application Error Cannot destructure property 'merchant_id' of 'req.body' as it is undefined.",
-  stack: "TypeError: Cannot destructure property 'merchant_id' of 'req.body' as it is undefined.\n" +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:10:11\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:108:21\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:14:5)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\index.js:284:15',
-  statusCode: 500,
-  method: 'POST',
-  url: '/api/payment-intents',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:52:01'
+  timestamp: '2025-10-15 17:11:22'
 }
 {
   message: '🔌 Connecting to MongoDB...',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:11'
-}
-{
-  message: '✅ Email service initialized successfully',
-  level: 'info',
-  service: 'klevapay-backend',
-  environment: 'development',
-  timestamp: '2025-10-13 22:54:14'
+  timestamp: '2025-10-15 17:11:40'
 }
 {
   message: '✅ Database connected successfully',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:15'
+  timestamp: '2025-10-15 17:11:42'
 }
 {
   message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:15'
+  timestamp: '2025-10-15 17:11:42'
 }
 {
   message: '🚀 KlevaPay server listening on http://localhost:4000',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:15'
+  timestamp: '2025-10-15 17:11:42'
 }
 {
   message: '📊 Environment: development',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:16'
+  timestamp: '2025-10-15 17:11:42'
 }
 {
   message: '📝 API Documentation available at http://localhost:4000/api/docs',
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
-  timestamp: '2025-10-13 22:54:16'
+  timestamp: '2025-10-15 17:11:42'
+}
+{
+  message: '✅ Email service initialized successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-15 17:11:42'
 }
 {
   service: 'klevapay-backend',
   environment: 'development',
-  id: new ObjectId("68ed750995ac11a64a92a16d"),
-  merchantId: '67121e8f8cfae1224fbe26d9',
+  id: new ObjectId("68efc7c568c62b07f19b1ec8"),
+  walletAddress: '0xa7b3cf8d9124ffa221b9e35e97c25a8bedc5f478',
   level: 'info',
   message: 'Payment intent created',
-  timestamp: '2025-10-13 22:54:17'
+  timestamp: '2025-10-15 17:11:50'
 }
 {
   service: 'klevapay-backend',
   environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Payment intent not found',
-  stack: 'ApiError: Payment intent not found\n' +
-    '    at ApiError.notFound (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:57:12)\n' +
-    '    at PaymentIntentService.getIntentById (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:38:33)\n' +
-    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
-    '    at async C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:40:18',
-  statusCode: 404,
-  requestId: undefined,
-  method: 'GET',
-  url: '/api/payment-intents/671230a94a12345678abcd90',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 22:59:59'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Payment intent not found',
-  stack: 'ApiError: Payment intent not found\n' +
-    '    at ApiError.notFound (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:57:12)\n' +
-    '    at PaymentIntentService.getIntentById (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:38:33)\n' +
-    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
-    '    at async C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:40:18',
-  statusCode: 404,
-  requestId: undefined,
-  method: 'GET',
-  url: '/api/payment-intents/67121e8f8cfae1224fbe26d9',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 23:00:19'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Invalid payment status',
-  stack: 'ApiError: Invalid payment status\n' +
-    '    at ApiError.badRequest (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:27:12)\n' +
-    '    at PaymentIntentService.updateStatus (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:48:22)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:55:45\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:108:21\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:14:5)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)',
-  statusCode: 400,
-  requestId: undefined,
-  method: 'PATCH',
-  url: '/api/payment-intents/68ed750995ac11a64a92a16d/status',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 23:03:36'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Invalid payment status',
-  stack: 'ApiError: Invalid payment status\n' +
-    '    at ApiError.badRequest (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:27:12)\n' +
-    '    at PaymentIntentService.updateStatus (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:48:22)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:55:45\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:108:21\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:14:5)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)',
-  statusCode: 400,
-  requestId: undefined,
-  method: 'PATCH',
-  url: '/api/payment-intents/68ed750995ac11a64a92a16d/status',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 23:05:02'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Invalid payment status',
-  stack: 'ApiError: Invalid payment status\n' +
-    '    at ApiError.badRequest (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:27:12)\n' +
-    '    at PaymentIntentService.updateStatus (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:48:22)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:55:45\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:108:21\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:14:5)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)',
-  statusCode: 400,
-  requestId: undefined,
-  method: 'PATCH',
-  url: '/api/payment-intents/68ed750995ac11a64a92a16d/status',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 23:05:07'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  name: 'ApiError',
-  message: 'Application Error Invalid payment status',
-  stack: 'ApiError: Invalid payment status\n' +
-    '    at ApiError.badRequest (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:27:12)\n' +
-    '    at PaymentIntentService.updateStatus (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\services\\PaymentIntentService.js:48:22)\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\paymentIntentController.js:55:45\n' +
-    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\errorHandler.js:108:21\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at exports.protect (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\middlewares\\authmiddleware.js:14:5)\n' +
-    '    at Layer.handle [as handle_request] (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
-    '    at next (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
-    '    at Route.dispatch (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\node_modules\\express\\lib\\router\\route.js:119:3)',
-  statusCode: 400,
-  requestId: undefined,
-  method: 'PATCH',
-  url: '/api/payment-intents/68ed750995ac11a64a92a16d/status',
-  userAgent: 'PostmanRuntime/7.48.0',
-  ip: '::1',
-  level: 'error',
-  timestamp: '2025-10-13 23:05:14'
-}
-{
-  service: 'klevapay-backend',
-  environment: 'development',
-  id: new ObjectId("68ed750995ac11a64a92a16d"),
-  status: 'PAID',
+  walletAddress: '0xA7B3cF8d9124FfA221b9E35E97C25a8bEDC5F478',
+  businessName: 'Crypto Merch Hub',
   level: 'info',
-  message: 'Payment status updated',
-  timestamp: '2025-10-13 23:06:36'
+  message: 'New business creation attempt',
+  timestamp: '2025-10-15 17:12:45'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Wallet address already linked to a business',
+  stack: 'ApiError: Wallet address already linked to a business\n' +
+    '    at ApiError.conflict (C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\lib\\ApiError.js:67:12)\n' +
+    '    at C:\\Users\\HP\\Documents\\klevapay\\backend-kleva\\controllers\\merchantController.js:18:38\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  statusCode: 409,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/merchant',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-15 17:12:45'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-15 17:13:15'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-15 17:13:18'
 }
