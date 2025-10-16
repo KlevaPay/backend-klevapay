@@ -102,7 +102,7 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 app.use('/api/payment-intents', require('./routes/paymentIntentRoute'));
 
-
+app.use('/api/pay', require('./routes/paymentintegrationRoute'));
 
 // ================================================================
 // LOGGING MIDDLEWARE
