@@ -107,6 +107,7 @@ app.use('/api/merchant', merchantRoutes);
 
 
 
+app.use('/api/pay', require('./routes/paymentintegrationRoute'));
 
 // ================================================================
 // LOGGING MIDDLEWARE
