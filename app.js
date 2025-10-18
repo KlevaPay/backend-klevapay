@@ -17,6 +17,7 @@ const logger = require('./lib/logger');
 const { globalErrorHandler, notFoundHandler } = require('./middlewares/errorHandler');
 const { swaggerSpec, swaggerUi, swaggerUiOptions } = require('./config/swagger');
 
+const merchantRoutes = require('./routes/merchantRoutes');
 
 // ================================================================
 // APPLICATION SETUP
@@ -101,6 +102,10 @@ const limiter = rateLimit({
 
 app.use('/api/', limiter);
 app.use('/api/payment-intents', require('./routes/paymentIntentRoute'));
+
+app.use('/api/merchant', merchantRoutes);
+
+
 
 app.use('/api/pay', require('./routes/paymentintegrationRoute'));
 

@@ -5,15 +5,14 @@ const {
   getPaymentIntent,
   updatePaymentStatus,
 } = require('../controllers/paymentIntentController');
-const { protect } = require('../middlewares/authmiddleware');
 
-// Create payment intent
-router.post('/', protect, createPaymentIntent);
 
-// Get payment intent details
-router.get('/:id', protect, getPaymentIntent);
+router.post('/', createPaymentIntent);
 
-// Update payment status
-router.patch('/:id/status', protect, updatePaymentStatus);
+
+router.get('/:id', getPaymentIntent);
+
+
+router.patch('/:id/status', updatePaymentStatus);
 
 module.exports = router;

@@ -1,23 +1,35 @@
 const { asyncHandler } = require('../middlewares/errorHandler');
 const PaymentIntentService = require('../services/PaymentIntentService');
+const Merchant = require('../models/Merchant');
 const logger = require('../lib/logger');
 
 /**
- * @desc Create a new payment intent
+ * @desc Create a new payment intent (linked by wallet)
  * @route POST /api/payment-intents
  */
 exports.createPaymentIntent = asyncHandler(async (req, res) => {
-  const { merchant_id, order_id, amount, source_currency, target_currency } = req.body;
+  const { walletAddress, order_id, amount, source_currency, target_currency } = req.body;
 
+  if (!walletAddress) {
+    return res.status(400).json({ success: false, message: 'Wallet address is required' });
+  }
+
+  // Find merchant by wallet address
+  const merchant = await Merchant.findOne({ walletAddress: walletAddress.toLowerCase() });
+  if (!merchant) {
+    return res.status(404).json({ success: false, message: 'Merchant not found for this wallet' });
+  }
+
+  // Create payment intent
   const paymentIntent = await PaymentIntentService.createIntent({
-    merchantId: merchant_id,
+    merchantId: merchant._id,
     orderId: order_id,
     amount,
     sourceCurrency: source_currency,
     targetCurrency: target_currency,
   });
 
-  logger.info('Payment intent created', { id: paymentIntent._id, merchantId: merchant_id });
+  logger.info('Payment intent created', { id: paymentIntent._id, walletAddress });
 
   res.status(201).json({
     success: true,
@@ -38,7 +50,6 @@ exports.createPaymentIntent = asyncHandler(async (req, res) => {
  */
 exports.getPaymentIntent = asyncHandler(async (req, res) => {
   const intent = await PaymentIntentService.getIntentById(req.params.id);
-
   res.json({
     success: true,
     message: 'Payment intent fetched successfully',
@@ -47,7 +58,7 @@ exports.getPaymentIntent = asyncHandler(async (req, res) => {
 });
 
 /**
- * @desc Update payment status manually (optional for admin)
+ * @desc Update payment status
  * @route PATCH /api/payment-intents/:id/status
  */
 exports.updatePaymentStatus = asyncHandler(async (req, res) => {
