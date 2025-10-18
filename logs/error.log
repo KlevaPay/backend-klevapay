@@ -1,0 +1,398 @@
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 23:15:30'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:15:36'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:16:12'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:17:37'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:17:57'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:18:40'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:19:04'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '1pwm6hx1c',
+  name: 'ApiError',
+  message: 'Application Error Route /api/merchant/wallet/%7BwalletAddress%7D not found',
+  stack: 'ApiError: Route /api/merchant/wallet/%7BwalletAddress%7D not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:646:15\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:265:14)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:20:14'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:20:19'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'yiqzpyuy6',
+  name: 'ApiError',
+  message: 'Application Error Route /api/merchants/wallet/%7BwalletAddress%7D not found',
+  stack: 'ApiError: Route /api/merchants/wallet/%7BwalletAddress%7D not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchants/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:22:11'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:22:26'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:24:14'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:47:21'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:49:28'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 23:51:20'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 23:53:40'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:55:23'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:55:27'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:55:45'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:56:01'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:56:10'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 23:57:07'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: undefined,
+  name: 'ApiError',
+  message: 'Application Error Business not found for this wallet',
+  stack: 'ApiError: Business not found for this wallet\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:44:33\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/merchant/wallet/%7BwalletAddress%7D',
+  userAgent: 'PostmanRuntime/7.48.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 23:57:10'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 00:03:39'
+}
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 00:03:44'
+}

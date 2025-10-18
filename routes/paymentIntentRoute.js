@@ -8,60 +8,140 @@ const {
 
 /**
  * @swagger
+ * components:
+ *   schemas:
+ *     PaymentIntentRequest:
+ *       type: object
+ *       required:
+ *         - walletAddress
+ *         - amount
+ *         - source_currency
+ *         - target_currency
+ *       properties:
+ *         walletAddress:
+ *           type: string
+ *           description: Merchant's wallet address (used to find merchant)
+ *           example: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+ *         order_id:
+ *           type: string
+ *           description: Optional order identifier
+ *           example: 'ORD-123456'
+ *         amount:
+ *           type: number
+ *           minimum: 0.01
+ *           description: Payment amount
+ *           example: 1000.50
+ *         source_currency:
+ *           type: string
+ *           description: Currency to pay with
+ *           example: 'USD'
+ *         target_currency:
+ *           type: string
+ *           description: Currency to receive
+ *           example: 'NGN'
+ *     PaymentIntentResponse:
+ *       type: object
+ *       properties:
+ *         success:
+ *           type: boolean
+ *           example: true
+ *         message:
+ *           type: string
+ *           example: 'Payment intent created successfully'
+ *         data:
+ *           type: object
+ *           properties:
+ *             id:
+ *               type: string
+ *               example: '64f5e8b2a1b2c3d4e5f6g7h8'
+ *             checkoutLink:
+ *               type: string
+ *               format: uri
+ *               example: 'https://checkout.klevapay.com/pay/abc123'
+ *             widgetToken:
+ *               type: string
+ *               example: 'wgt_token_abc123xyz'
+ *             status:
+ *               type: string
+ *               example: 'PENDING'
+ *             createdAt:
+ *               type: string
+ *               format: date-time
+ *     PaymentStatusUpdate:
+ *       type: object
+ *       required:
+ *         - status
+ *       properties:
+ *         status:
+ *           type: string
+ *           description: New payment status
+ *           example: 'PAID'
+ */
+
+/**
+ * @swagger
  * /api/payment-intents:
  *   post:
  *     tags: [Payment Intents]
  *     summary: Create a new payment intent
- *     description: Creates a new payment intent for processing a payment transaction
- *     security:
- *       - BearerAuth: []
+ *     description: Create a payment intent using merchant's wallet address to identify the merchant
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - amount
- *               - currency
- *               - merchantId
- *             properties:
- *               amount:
- *                 type: number
- *                 description: Payment amount
- *                 example: 1000.50
- *               currency:
- *                 type: string
- *                 enum: [NGN, USD, EUR, USDT, BTC, ETH]
- *                 description: Payment currency
- *                 example: "NGN"
- *               merchantId:
- *                 type: string
- *                 description: Merchant identifier
- *                 example: "64f5e8b2a1b2c3d4e5f6g7h8"
- *               description:
- *                 type: string
- *                 description: Payment description
- *                 example: "Payment for order #12345"
- *               metadata:
- *                 type: object
- *                 description: Additional payment metadata
- *                 example: {"orderId": "12345", "customerId": "cust_123"}
+ *             $ref: '#/components/schemas/PaymentIntentRequest'
+ *           examples:
+ *             basic_payment:
+ *               summary: Basic payment intent
+ *               value:
+ *                 walletAddress: "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+ *                 amount: 1000.50
+ *                 source_currency: "USD"
+ *                 target_currency: "NGN"
+ *             with_order_id:
+ *               summary: Payment intent with order ID
+ *               value:
+ *                 walletAddress: "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+ *                 order_id: "ORD-2023-001"
+ *                 amount: 29.99
+ *                 source_currency: "USD"
+ *                 target_currency: "NGN"
  *     responses:
  *       201:
  *         description: Payment intent created successfully
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/SuccessResponse'
+ *               $ref: '#/components/schemas/PaymentIntentResponse'
  *       400:
- *         description: Bad request - Invalid input data
+ *         description: Invalid request data or missing required fields
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Wallet address is required"
+ *       404:
+ *         description: Merchant not found for the provided wallet address
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Merchant not found for this wallet"
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
@@ -74,10 +154,8 @@ router.post('/', createPaymentIntent);
  * /api/payment-intents/{id}:
  *   get:
  *     tags: [Payment Intents]
- *     summary: Get payment intent by ID
- *     description: Retrieves a specific payment intent by its unique identifier
- *     security:
- *       - BearerAuth: []
+ *     summary: Get payment intent details
+ *     description: Retrieve detailed information about a specific payment intent by its ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -85,7 +163,7 @@ router.post('/', createPaymentIntent);
  *         schema:
  *           type: string
  *         description: Payment intent unique identifier
- *         example: "64f5e8b2a1b2c3d4e5f6g7h8"
+ *         example: '64f5e8b2a1b2c3d4e5f6g7h8'
  *     responses:
  *       200:
  *         description: Payment intent retrieved successfully
@@ -97,6 +175,9 @@ router.post('/', createPaymentIntent);
  *                 success:
  *                   type: boolean
  *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: 'Payment intent retrieved successfully'
  *                 data:
  *                   $ref: '#/components/schemas/PaymentIntent'
  *       404:
@@ -105,8 +186,8 @@ router.post('/', createPaymentIntent);
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
@@ -120,9 +201,7 @@ router.get('/:id', getPaymentIntent);
  *   patch:
  *     tags: [Payment Intents]
  *     summary: Update payment intent status
- *     description: Updates the status of a specific payment intent
- *     security:
- *       - BearerAuth: []
+ *     description: Update the status of a payment intent (typically called by payment providers or webhooks)
  *     parameters:
  *       - in: path
  *         name: id
@@ -130,34 +209,40 @@ router.get('/:id', getPaymentIntent);
  *         schema:
  *           type: string
  *         description: Payment intent unique identifier
- *         example: "64f5e8b2a1b2c3d4e5f6g7h8"
+ *         example: '64f5e8b2a1b2c3d4e5f6g7h8'
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - status
- *             properties:
- *               status:
- *                 type: string
- *                 enum: [pending, processing, succeeded, failed, cancelled]
- *                 description: New payment status
- *                 example: "succeeded"
- *               failureReason:
- *                 type: string
- *                 description: Reason for failure (required when status is 'failed')
- *                 example: "Insufficient funds"
+ *             $ref: '#/components/schemas/PaymentStatusUpdate'
+ *           examples:
+ *             payment_success:
+ *               summary: Mark payment as paid
+ *               value:
+ *                 status: "PAID"
+ *             payment_failure:
+ *               summary: Mark payment as failed
+ *               value:
+ *                 status: "FAILED"
  *     responses:
  *       200:
- *         description: Payment intent status updated successfully
+ *         description: Payment status updated successfully
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/SuccessResponse'
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: 'Payment status updated to PAID'
+ *                 data:
+ *                   $ref: '#/components/schemas/PaymentIntent'
  *       400:
- *         description: Bad request - Invalid status or missing required fields
+ *         description: Invalid status or request data
  *         content:
  *           application/json:
  *             schema:
@@ -168,8 +253,8 @@ router.get('/:id', getPaymentIntent);
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
