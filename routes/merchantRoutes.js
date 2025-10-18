@@ -6,60 +6,100 @@ const merchantController = require('../controllers/merchantController');
 
 /**
  * @swagger
- * /api/merchant:
+ * components:
+ *   schemas:
+ *     CreateBusinessRequest:
+ *       type: object
+ *       required:
+ *         - walletAddress
+ *         - businessName
+ *       properties:
+ *         walletAddress:
+ *           type: string
+ *           description: Merchant's unique wallet address
+ *           example: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+ *         businessName:
+ *           type: string
+ *           minLength: 2
+ *           description: Unique business name
+ *           example: 'Tech Innovations Ltd'
+ *         payoutPreferences:
+ *           type: object
+ *           description: Optional payout preferences
+ *           properties:
+ *             currency:
+ *               type: string
+ *               example: 'NGN'
+ *             method:
+ *               type: string
+ *               example: 'bank_transfer'
+ *         country:
+ *           type: string
+ *           description: Business country
+ *           example: 'Nigeria'
+ *     BusinessResponse:
+ *       type: object
+ *       properties:
+ *         success:
+ *           type: boolean
+ *           example: true
+ *         message:
+ *           type: string
+ *           example: 'Business created successfully'
+ *         data:
+ *           $ref: '#/components/schemas/Merchant'
+ *     BusinessListResponse:
+ *       type: object
+ *       properties:
+ *         success:
+ *           type: boolean
+ *           example: true
+ *         count:
+ *           type: integer
+ *           example: 25
+ *         data:
+ *           type: array
+ *           items:
+ *             $ref: '#/components/schemas/Merchant'
+ */
+
+/**
+ * @swagger
+ * /api/merchants:
  *   post:
  *     tags: [Merchant]
  *     summary: Create a new business profile
- *     description: Creates a new merchant business profile after wallet connection - the first interaction in the onboarding process
+ *     description: Create a new merchant business profile after wallet connection (onboarding step)
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - walletAddress
- *               - businessName
- *             properties:
- *               walletAddress:
- *                 type: string
- *                 description: Merchant's crypto wallet address
- *                 example: "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
- *               businessName:
- *                 type: string
- *                 minLength: 2
- *                 maxLength: 100
- *                 description: Unique business name
- *                 example: "Tech Innovations Ltd"
- *               payoutPreferences:
- *                 type: object
- *                 properties:
- *                   currency:
- *                     type: string
- *                     enum: [NGN, USD, EUR, USDT, BTC, ETH]
- *                     default: "NGN"
- *                     example: "NGN"
- *                   method:
- *                     type: string
- *                     enum: [bank_transfer, crypto_wallet, mobile_money]
- *                     default: "bank_transfer"
- *                     example: "bank_transfer"
- *               businessDetails:
- *                 type: object
- *                 properties:
- *                   industry:
- *                     type: string
- *                     example: "E-commerce"
- *                   description:
- *                     type: string
- *                     example: "Online retail technology solutions"
- *                   website:
- *                     type: string
- *                     format: uri
- *                     example: "https://techinnovations.com"
+ *             $ref: '#/components/schemas/CreateBusinessRequest'
+ *           examples:
+ *             basic_business:
+ *               summary: Minimal required fields
+ *               value:
+ *                 walletAddress: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+ *                 businessName: 'Tech Innovations Ltd'
+ *             complete_business:
+ *               summary: Complete business profile
+ *               value:
+ *                 walletAddress: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+ *                 businessName: 'Digital Solutions Inc'
+ *                 country: 'Nigeria'
+ *                 payoutPreferences:
+ *                   currency: 'NGN'
+ *                   method: 'bank_transfer'
  *     responses:
  *       201:
- *         description: Business profile created successfully
+ *         description: Business created successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/BusinessResponse'
+ *       400:
+ *         description: Invalid input data (missing wallet address or business name)
  *         content:
  *           application/json:
  *             schema:
@@ -67,26 +107,30 @@ const merchantController = require('../controllers/merchantController');
  *               properties:
  *                 success:
  *                   type: boolean
- *                   example: true
+ *                   example: false
  *                 message:
  *                   type: string
- *                   example: "Business profile created successfully"
- *                 data:
- *                   $ref: '#/components/schemas/Merchant'
- *       400:
- *         description: Bad request - Invalid input data or business name already exists
+ *                   example: "Wallet address is required"
+ *       409:
+ *         description: Wallet address already linked or business name already exists
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       409:
- *         description: Conflict - Wallet address or business name already registered
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Wallet address already linked to a business"
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-// Create a new business (first interaction after wallet connect)
 router.post(
   '/',
   [
@@ -99,19 +143,19 @@ router.post(
 
 /**
  * @swagger
- * /api/merchant/wallet/{walletAddress}:
+ * /api/merchants/wallet/{walletAddress}:
  *   get:
  *     tags: [Merchant]
  *     summary: Get business profile by wallet address
- *     description: Retrieves merchant business profile information using the associated wallet address
+ *     description: Retrieve merchant business profile using their wallet address
  *     parameters:
  *       - in: path
  *         name: walletAddress
  *         required: true
  *         schema:
  *           type: string
- *         description: Crypto wallet address associated with the business
- *         example: "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+ *         description: Merchant's wallet address
+ *         example: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
  *     responses:
  *       200:
  *         description: Business profile retrieved successfully
@@ -125,20 +169,32 @@ router.post(
  *                   example: true
  *                 data:
  *                   $ref: '#/components/schemas/Merchant'
- *       404:
- *         description: Business profile not found for the provided wallet address
+ *       400:
+ *         description: Invalid wallet address format
  *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
- *       400:
- *         description: Bad request - Invalid wallet address format
+ *       404:
+ *         description: Business not found for this wallet address
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Business not found for this wallet"
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-// Get business by wallet
 router.get(
   '/wallet/:walletAddress',
   [param('walletAddress').isString().withMessage('Invalid wallet address')],
@@ -148,87 +204,25 @@ router.get(
 
 /**
  * @swagger
- * /api/merchant:
+ * /api/merchants:
  *   get:
  *     tags: [Merchant]
- *     summary: Get all business profiles (Admin only)
- *     description: Retrieves a list of all registered merchant business profiles - restricted to admin users
- *     security:
- *       - BearerAuth: []
- *     parameters:
- *       - in: query
- *         name: page
- *         schema:
- *           type: integer
- *           minimum: 1
- *           default: 1
- *         description: Page number for pagination
- *       - in: query
- *         name: limit
- *         schema:
- *           type: integer
- *           minimum: 1
- *           maximum: 100
- *           default: 20
- *         description: Number of records per page
- *       - in: query
- *         name: status
- *         schema:
- *           type: string
- *           enum: [active, inactive, pending, suspended]
- *         description: Filter by merchant status
- *       - in: query
- *         name: verified
- *         schema:
- *           type: boolean
- *         description: Filter by verification status
+ *     summary: Get all businesses (Admin endpoint)
+ *     description: Retrieve list of all merchant businesses - typically for admin dashboard. No input parameters required.
  *     responses:
  *       200:
- *         description: Business profiles retrieved successfully
+ *         description: Businesses retrieved successfully
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 data:
- *                   type: object
- *                   properties:
- *                     merchants:
- *                       type: array
- *                       items:
- *                         $ref: '#/components/schemas/Merchant'
- *                     pagination:
- *                       type: object
- *                       properties:
- *                         page:
- *                           type: integer
- *                           example: 1
- *                         limit:
- *                           type: integer
- *                           example: 20
- *                         total:
- *                           type: integer
- *                           example: 150
- *                         pages:
- *                           type: integer
- *                           example: 8
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       403:
- *         description: Forbidden - Admin access required
+ *               $ref: '#/components/schemas/BusinessListResponse'
+ *       500:
+ *         description: Internal server error
  *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-// Get all businesses (admin only)
 router.get('/', merchantController.getAllBusinesses);
 
 module.exports = router;

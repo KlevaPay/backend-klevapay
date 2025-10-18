@@ -1,0 +1,27 @@
+FLW_SECRET FLWSECK_TEST-38700741a4c22db7c4a6751621d4b204-X
+📚 Swagger schemas loaded: [
+  'ApiError',
+  'SuccessResponse',
+  'Merchant',
+  'PaymentIntent',
+  'Transaction',
+  'TransactionResponse',
+  'TransactionStatsResponse',
+  'CreateBusinessRequest',
+  'BusinessResponse',
+  'BusinessListResponse',
+  'PaymentIntentRequest',
+  'PaymentIntentResponse',
+  'PaymentStatusUpdate',
+  'CreatePaymentRequest',
+  'PaymentResponse',
+  'StatusCheckRequest',
+  'StatusCheckResponse',
+  'RedirectRequest',
+  'WebhookRequest'
+]
+23:53:38 [[32minfo[39m]: 🔌 Connecting to MongoDB...
+db connected
+23:53:40 [[32minfo[39m]: ✅ Database connected successfully
+23:53:40 [[32minfo[39m]: 🎯 KlevaPay Backend API v1.0.0 started successfully
+23:53:40 [[31merror[39m]: Pipe 4000 is already in use
