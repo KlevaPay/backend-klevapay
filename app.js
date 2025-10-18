@@ -267,9 +267,16 @@ app.get('/api/health', (req, res) => {
 // ================================================================
 
 // Authentication routes
-app.use('/api/auth', require('./routes/authRoutes'));
-// TODO: Merchant routes (to be implemented)
-// app.use('/api/merchant', require('./routes/merchantRoutes'));
+// TODO: Create authRoutes.js file - currently referenced but missing
+// app.use('/api/auth', require('./routes/authRoutes'));
+
+// Note: If authentication routes are needed, create /routes/authRoutes.js with:
+// - POST /api/auth/register - User registration
+// - POST /api/auth/login - User login  
+// - POST /api/auth/verify-email - Email verification with OTP
+// - POST /api/auth/forgot-password - Password reset request
+// - POST /api/auth/reset-password - Password reset with OTP
+// - POST /api/auth/refresh-token - JWT token refresh
 
 
 // ================================================================

@@ -1,0 +1,82 @@
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:40'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:42'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:42'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:42'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:42'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 15:39:42'
+}
+{
+  message: '::1 - - [18/Oct/2025:14:39:47 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '7q58c75in',
+  timestamp: '2025-10-18 15:39:47'
+}
+{
+  message: '::1 - - [18/Oct/2025:14:39:48 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 200 56626 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '5ojx0rhxe',
+  timestamp: '2025-10-18 15:39:48'
+}
+{
+  message: '::1 - - [18/Oct/2025:14:39:48 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 250335 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '5ojx0rhxe',
+  timestamp: '2025-10-18 15:39:48'
+}
+{
+  message: '::1 - - [18/Oct/2025:14:39:48 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 200 155212 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '5ojx0rhxe',
+  timestamp: '2025-10-18 15:39:48'
+}
+{
+  message: '::1 - - [18/Oct/2025:14:39:48 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 200 1510217 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '5ojx0rhxe',
+  timestamp: '2025-10-18 15:39:48'
+}
