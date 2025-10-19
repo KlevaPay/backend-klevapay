@@ -1,0 +1,125 @@
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/home/gafar/kleva/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/crypto/owner',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 22:24:51'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/home/gafar/kleva/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'GET',
+  url: '/api/crypto/total-liquidity',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-18 22:39:48'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'hurj3yq2t',
+  name: 'ApiError',
+  message: 'Application Error Route /api/crypto/remove-liquidity not found',
+  stack: 'ApiError: Route /api/crypto/remove-liquidity not found\n' +
+    '    at ApiError.notFound (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/home/gafar/kleva/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/home/gafar/kleva/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/crypto/remove-liquidity',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 01:25:24'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'hxbho00pc',
+  name: 'ApiError',
+  message: 'Application Error Route /api/crypto/remove-liquidity not found',
+  stack: 'ApiError: Route /api/crypto/remove-liquidity not found\n' +
+    '    at ApiError.notFound (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/home/gafar/kleva/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/home/gafar/kleva/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/crypto/remove-liquidity',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 01:25:37'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'nve0v1i2d',
+  name: 'ApiError',
+  message: 'Application Error Route /api/crypto/remove-liquidity not found',
+  stack: 'ApiError: Route /api/crypto/remove-liquidity not found\n' +
+    '    at ApiError.notFound (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/home/gafar/kleva/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/home/gafar/kleva/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/crypto/remove-liquidity',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 01:25:52'
+}

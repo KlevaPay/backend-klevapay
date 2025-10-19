@@ -1,0 +1,4368 @@
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:53:53 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 219924,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 95760384,
+      heapTotal: 58580992,
+      heapUsed: 26442016,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.88, 8.94, 7.45 ], uptime: 175696.34 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:53:53'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:54:34 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220115,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 77496320,
+      heapTotal: 58318848,
+      heapUsed: 26220968,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 4.27, 8.35, 7.31 ], uptime: 175736.45 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:54:34'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:54:42 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220174,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 92946432,
+      heapTotal: 58318848,
+      heapUsed: 26545256,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 4.57, 8.34, 7.32 ], uptime: 175744.87 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:54:42'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:54:59 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220248,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94646272,
+      heapTotal: 58318848,
+      heapUsed: 26349896,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 6.74, 8.59, 7.42 ], uptime: 175762.05 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:54:59'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:55:18 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220315,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 64978944,
+      heapTotal: 58318848,
+      heapUsed: 26431384,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 8.59, 8.9, 7.55 ], uptime: 175780.92 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:55:18'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:55:48 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220411,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 67080192,
+      heapTotal: 58318848,
+      heapUsed: 26487520,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 8.92, 8.91, 7.59 ], uptime: 175811.32 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:55:48'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:56:08 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220559,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 74448896,
+      heapTotal: 58056704,
+      heapUsed: 26383656,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 9.43, 9.03, 7.65 ], uptime: 175830.63 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:56:08'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:13:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:13:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:13:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:56:21 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220629,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 69193728,
+      heapTotal: 58318848,
+      heapUsed: 26580464,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 9.82, 9.13, 7.71 ], uptime: 175843.95 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:56:21'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:57:22 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220914,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 71225344,
+      heapTotal: 58318848,
+      heapUsed: 26361240,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 7.94, 8.8, 7.69 ], uptime: 175905.28 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:57:22'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:57:35 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 220990,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93519872,
+      heapTotal: 58318848,
+      heapUsed: 26210432,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 7.48, 8.66, 7.66 ], uptime: 175918.25 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:57:35'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:57:54 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 221082,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 80850944,
+      heapTotal: 58318848,
+      heapUsed: 26434880,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 6.77, 8.41, 7.6 ], uptime: 175936.88 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:57:54'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 21:58:01 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 221137,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 73445376,
+      heapTotal: 58318848,
+      heapUsed: 26132888,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 6.79, 8.38, 7.59 ], uptime: 175944.27 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 21:58:01'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:01:13 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 222045,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94838784,
+      heapTotal: 58318848,
+      heapUsed: 26510960,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.25, 5.38, 6.56 ], uptime: 176136.21 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:01:13'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:02:49 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 222510,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94711808,
+      heapTotal: 58318848,
+      heapUsed: 26306784,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.69, 4.62, 6.17 ], uptime: 176231.46 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:02:49'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:03:04 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 222612,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93876224,
+      heapTotal: 58318848,
+      heapUsed: 26366424,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.92, 4.58, 6.13 ], uptime: 176247.21 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:03:04'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:03:53 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 222846,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 97333248,
+      heapTotal: 58580992,
+      heapUsed: 26300568,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.73, 4.26, 5.94 ], uptime: 176295.86 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:03:53'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import cryptoService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import cryptoService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:04:34 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 223055,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93642752,
+      heapTotal: 58056704,
+      heapUsed: 26221160,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.96, 4.13, 5.82 ], uptime: 176337.27 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:04:34'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import CryptoIntegrationService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import CryptoIntegrationService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import CryptoIntegrationService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:05:19 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 223290,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93442048,
+      heapTotal: 58318848,
+      heapUsed: 26585928,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 2.49, 3.84, 5.64 ], uptime: 176382.36 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:05:19'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1
+  import CryptoIntegrationService from "../services/cryptoIntegration.js";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import CryptoIntegrationService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1\n' +
+    'import CryptoIntegrationService from "../services/cryptoIntegration.js";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:06:34 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 223677,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94040064,
+      heapTotal: 58318848,
+      heapUsed: 26308528,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.29, 3.84, 5.51 ], uptime: 176456.53 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:06:34'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:3
+  export async function getTotalLiquidity(req, res) {
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:3\n' +
+    'export async function getTotalLiquidity(req, res) {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:3\n' +
+    'export async function getTotalLiquidity(req, res) {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:07:46 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 224060,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94121984,
+      heapTotal: 58580992,
+      heapUsed: 26428424,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.29, 3.7, 5.33 ], uptime: 176528.57 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:07:46'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:81
+  export default {
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:81\n' +
+    'export default {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:81\n' +
+    'export default {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:08:54 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 224399,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94879744,
+      heapTotal: 58318848,
+      heapUsed: 26312264,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.15, 3.61, 5.18 ], uptime: 176597.21 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/home/gafar/kleva/backend-klevapay/routes/cryptoIntegration.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:08:54'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1
+  import { ethers } from "ethers";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1\n' +
+    'import { ethers } from "ethers";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1\n' +
+    'import { ethers } from "ethers";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:09:30 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 224635,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 94171136,
+      heapTotal: 58580992,
+      heapUsed: 29699496,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.87, 3.74, 5.17 ], uptime: 176633.36 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 34,
+      file: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:09:30'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1
+  import { ethers } from "ethers";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1\n' +
+    'import { ethers } from "ethers";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:1\n' +
+    'import { ethers } from "ethers";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:10:16 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 224879,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 95956992,
+      heapTotal: 58056704,
+      heapUsed: 26211872,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.68, 3.69, 5.08 ], uptime: 176678.66 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 34,
+      file: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:10:16'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:4
+  export default class CryptoIntegrationService {
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:4\n' +
+    'export default class CryptoIntegrationService {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:4\n' +
+    'export default class CryptoIntegrationService {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js:1:34)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:10:45 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 225033,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 93097984,
+      heapTotal: 58318848,
+      heapUsed: 26608808,
+      external: 20499226,
+      arrayBuffers: 18262463
+    }
+  },
+  os: { loadavg: [ 3.34, 3.61, 5.01 ], uptime: 176707.48 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 34,
+      file: '/home/gafar/kleva/backend-klevapay/controllers/cryptoIntegrationController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:10:45'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/config/crypto-integration.js:4
+  export default class CryptoIntegrationConfig {
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:2:33)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:4\n' +
+    'export default class CryptoIntegrationConfig {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:2:33)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:4\n' +
+    'export default class CryptoIntegrationConfig {\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js:2:33)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:12:29 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 225542,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 96296960,
+      heapTotal: 59367424,
+      heapUsed: 33935144,
+      external: 20502770,
+      arrayBuffers: 18266007
+    }
+  },
+  os: { loadavg: [ 3.65, 3.61, 4.86 ], uptime: 176812.16 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: '/home/gafar/kleva/backend-klevapay/services/cryptoIntegration.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:12:29'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/utils/abi.js:1
+  export default [
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:13:00 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 225712,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 97468416,
+      heapTotal: 59367424,
+      heapUsed: 33976608,
+      external: 20502770,
+      arrayBuffers: 18266007
+    }
+  },
+  os: { loadavg: [ 3.32, 3.53, 4.79 ], uptime: 176842.74 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: '/home/gafar/kleva/backend-klevapay/config/crypto-integration.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:13:00'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/utils/abi.js:1
+  export default [
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:13:19 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 225821,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 100171776,
+      heapTotal: 59629568,
+      heapUsed: 33983624,
+      external: 20502770,
+      arrayBuffers: 18266007
+    }
+  },
+  os: { loadavg: [ 3.66, 3.58, 4.78 ], uptime: 176861.42 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: '/home/gafar/kleva/backend-klevapay/config/crypto-integration.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:13:19'
+}
+{
+  error: /home/gafar/kleva/backend-klevapay/utils/abi.js:1
+  export default [
+  ^^^^^^
+  
+  SyntaxError: Unexpected token 'export'
+      at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+      at Module._compile (node:internal/modules/cjs/loader:1428:41)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+      at Module.load (node:internal/modules/cjs/loader:1288:32)
+      at Module._load (node:internal/modules/cjs/loader:1104:12)
+      at Module.require (node:internal/modules/cjs/loader:1311:19)
+      at require (node:internal/modules/helpers:179:18)
+      at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)
+      at Module._compile (node:internal/modules/cjs/loader:1469:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1548:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'export'\n" +
+    '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  stack: '/home/gafar/kleva/backend-klevapay/utils/abi.js:1\n' +
+    'export default [\n' +
+    '^^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'export'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1378:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1428:41)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1288:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1104:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1311:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (/home/gafar/kleva/backend-klevapay/config/crypto-integration.js:2:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)',
+  exception: true,
+  date: 'Sat Oct 18 2025 22:14:43 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 226240,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/home/gafar/kleva/backend-klevapay',
+    execPath: '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+    version: 'v20.18.2',
+    argv: [
+      '/home/gafar/.nvm/versions/node/v20.18.2/bin/node',
+      '/home/gafar/kleva/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 98926592,
+      heapTotal: 59629568,
+      heapUsed: 33968184,
+      external: 20502770,
+      arrayBuffers: 18266007
+    }
+  },
+  os: { loadavg: [ 3.08, 3.38, 4.6 ], uptime: 176946.08 },
+  trace: [
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1378,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1428,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1288,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1104,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1311,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: '/home/gafar/kleva/backend-klevapay/config/crypto-integration.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1469,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1548,
+      method: '.js',
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-18 22:14:43'
+}

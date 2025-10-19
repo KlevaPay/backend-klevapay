@@ -16,8 +16,9 @@ const { StatusCodes } = require('http-status-codes');
 const logger = require('./lib/logger');
 const { globalErrorHandler, notFoundHandler } = require('./middlewares/errorHandler');
 const { swaggerSpec, swaggerUi, swaggerUiOptions } = require('./config/swagger');
-
 const merchantRoutes = require('./routes/merchantRoutes');
+const cryptoRoutes = require('./routes/cryptoIntegration');
+
 
 // ================================================================
 // APPLICATION SETUP
@@ -102,12 +103,9 @@ const limiter = rateLimit({
 
 app.use('/api/', limiter);
 app.use('/api/payment-intents', require('./routes/paymentIntentRoute'));
-
 app.use('/api/merchant', merchantRoutes);
-
-
-
 app.use('/api/pay', require('./routes/paymentintegrationRoute'));
+app.use('/api/crypto', cryptoRoutes);
 
 // ================================================================
 // LOGGING MIDDLEWARE
