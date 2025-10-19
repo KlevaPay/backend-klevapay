@@ -1,4 +1,4 @@
-// services/paymentService.js
+const { convert } = require('./pricefeed');
 const { flwClient } = require("../config/flutterwave");
 
 class PaymentService {
@@ -7,8 +7,12 @@ class PaymentService {
 
     const reference = tx_ref || `tx-${Date.now()}`;
     let response;
+    let gatewayAmount = amount;
+    let gatewayCurrency = currency;
 
-    if (method === "card") {
+    if (method === "card" && currency.toUpperCase() === 'NGN') {
+      gatewayAmount = await convert('NGN', 'USD', amount);
+      gatewayCurrency = 'USD';
       const payload = {
         tx_ref: reference,
         amount,

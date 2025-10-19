@@ -123,3 +123,53 @@
   level: 'error',
   timestamp: '2025-10-19 01:25:52'
 }
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/home/gafar/kleva/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/crypto/credit-merchant',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 07:59:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/home/gafar/kleva/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/home/gafar/kleva/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/home/gafar/kleva/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/crypto/add-liquidity',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 08:01:48'
+}
