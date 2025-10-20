@@ -544,7 +544,7 @@ app.get('/', (req, res) => {
     message: 'KlevaPay API',
     version: '1.0.0',
     environment: process.env.NODE_ENV || 'development',
-    endpoints: ['/api/auth', '/api/merchant', '/api/health', '/api/docs'],
+    endpoints: ['/api/auth', '/api/merchant', '/api/health', '/api/docs',  '/api/payment-intents',  '/api/transactions', '/api/pay',  '/api/crypto'],
     timestamp: new Date().toISOString()
   });
 });
