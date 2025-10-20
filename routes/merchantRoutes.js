@@ -33,6 +33,21 @@ const merchantController = require('../controllers/merchantController');
  *             method:
  *               type: string
  *               example: 'bank_transfer'
+  *             accountDetails:
+  *               type: object
+  *               properties:
+  *                 bankName:
+  *                   type: string
+  *                   example: 'Access Bank'
+  *                 accountNumber:
+  *                   type: string
+  *                   example: '0123456789'
+  *                 accountName:
+  *                   type: string
+  *                   example: 'Tech Innovations Ltd'
+  *                 routingNumber:
+  *                   type: string
+  *                   example: '044'
  *         country:
  *           type: string
  *           description: Business country
@@ -85,12 +100,16 @@ const merchantController = require('../controllers/merchantController');
  *             complete_business:
  *               summary: Complete business profile
  *               value:
- *                 walletAddress: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
- *                 businessName: 'Digital Solutions Inc'
+  *                 walletAddress: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+  *                 businessName: 'Tech Innovations Ltd'
  *                 country: 'Nigeria'
  *                 payoutPreferences:
  *                   currency: 'NGN'
  *                   method: 'bank_transfer'
+  *                   accountDetails:
+  *                     bankName: 'Access Bank'
+  *                     accountNumber: '0123456789'
+  *                     accountName: 'Tech Innovations Ltd'
  *     responses:
  *       201:
  *         description: Business created successfully
@@ -130,7 +149,8 @@ const merchantController = require('../controllers/merchantController');
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
- */
+ */ 
+
 router.post(
   '/',
   [
