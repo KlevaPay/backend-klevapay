@@ -164,7 +164,7 @@ const {
  *                   type: object
  *                   description: Error details
  */
-router.post("/create-payment", protect, createPayment);
+router.post("/create-payment", createPayment);
 
 /**
  * @swagger
@@ -204,7 +204,7 @@ router.post("/create-payment", protect, createPayment);
  *                   type: string
  *                   example: "tx_ref required"
  */
-router.post("/check-status", protect, checkStatus);
+router.post("/check-status", checkStatus);
 
 /**
  * @swagger
@@ -303,6 +303,6 @@ router.post("/handle-redirect", protect, handleRedirect);
  *                   type: string
  *                   example: "unauthorized"
  */
-router.post("/webhook", protect, handleWebhook);
+router.post("/webhook", handleWebhook);
 
 module.exports = router;

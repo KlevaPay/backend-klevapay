@@ -151,14 +151,14 @@ const {
  *         name: status
  *         schema:
  *           type: string
- *           enum: [PENDING, PAID, SETTLED, FAILED]
+ *           enum: [PENDING, PAID, SETTLED, FAILED, SUCCESS, PROCESSING]
  *         description: Filter by transaction status (case insensitive, converted to uppercase)
  *         example: 'paid'
  *       - in: query
  *         name: method
  *         schema:
  *           type: string
- *           enum: [CARD, BANK, WALLET]
+ *           enum: [CARD, BANK, WALLET, CRYPTO, FIAT]
  *         description: Filter by payment method (case insensitive, converted to uppercase)
  *         example: 'card'
  *       - in: query
@@ -240,11 +240,11 @@ router.get(
       .withMessage('Limit must be between 1 and 100'),
     query('status')
       .optional()
-      .isIn(['PENDING', 'PAID', 'SETTLED', 'FAILED'])
+      .isIn(['PENDING', 'PAID', 'SETTLED', 'FAILED', 'SUCCESS', 'PROCESSING'])
       .withMessage('Invalid status value'),
     query('method')
       .optional()
-      .isIn(['CARD', 'BANK', 'WALLET'])
+      .isIn(['CARD', 'BANK', 'WALLET', 'CRYPTO', 'FIAT'])
       .withMessage('Invalid payment method'),
     query('currency')
       .optional()

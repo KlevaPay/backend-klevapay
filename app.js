@@ -19,9 +19,10 @@ const { globalErrorHandler, notFoundHandler } = require('./middlewares/errorHand
 // Swagger setup
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-
 const merchantRoutes = require('./routes/merchantRoutes');
 const transactionRoutes = require('./routes/transactionRoutes');
+const cryptoRoutes = require('./routes/cryptoIntegration');
+
 
 // ================================================================
 // APPLICATION SETUP
@@ -106,12 +107,12 @@ const limiter = rateLimit({
 
 app.use('/api/', limiter);
 app.use('/api/payment-intents', require('./routes/paymentIntentRoute'));
-
 app.use('/api/merchant', merchantRoutes);
 
 app.use('/api/transactions', transactionRoutes);
 
 app.use('/api/pay', require('./routes/paymentintegrationRoute'));
+app.use('/api/crypto', cryptoRoutes);
 
 // ================================================================
 // LOGGING MIDDLEWARE
