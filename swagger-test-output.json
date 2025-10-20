@@ -1,0 +1,379 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "KlevaPay Backend API",
+    "version": "1.0.0",
+    "description": "Merchant payment gateway backend API for KlevaPay platform"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000",
+      "description": "Development server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "ApiError": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": false
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "ApiError"
+              },
+              "message": {
+                "type": "string",
+                "example": "Validation Error"
+              },
+              "statusCode": {
+                "type": "integer",
+                "example": 400
+              }
+            }
+          }
+        }
+      },
+      "Merchant": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "example": "64f5e8b2a1b2c3d4e5f6g7h8"
+          },
+          "walletAddress": {
+            "type": "string",
+            "example": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+          },
+          "businessName": {
+            "type": "string",
+            "example": "Tech Innovations Ltd"
+          },
+          "country": {
+            "type": "string",
+            "example": "Nigeria"
+          },
+          "payoutPreferences": {
+            "type": "object",
+            "properties": {
+              "currency": {
+                "type": "string",
+                "example": "NGN"
+              },
+              "method": {
+                "type": "string",
+                "example": "bank_transfer"
+              }
+            }
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "CreateBusinessRequest": {
+        "type": "object",
+        "required": [
+          "walletAddress",
+          "businessName"
+        ],
+        "properties": {
+          "walletAddress": {
+            "type": "string",
+            "description": "Merchant's unique wallet address",
+            "example": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+          },
+          "businessName": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Unique business name",
+            "example": "Tech Innovations Ltd"
+          },
+          "payoutPreferences": {
+            "type": "object",
+            "description": "Optional payout preferences",
+            "properties": {
+              "currency": {
+                "type": "string",
+                "example": "NGN"
+              },
+              "method": {
+                "type": "string",
+                "example": "bank_transfer"
+              }
+            }
+          },
+          "country": {
+            "type": "string",
+            "description": "Business country",
+            "example": "Nigeria"
+          }
+        }
+      },
+      "BusinessResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "type": "string",
+            "example": "Business created successfully"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Merchant"
+          }
+        }
+      },
+      "BusinessListResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "count": {
+            "type": "integer",
+            "example": 25
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Merchant"
+            }
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/api/merchants": {
+      "post": {
+        "tags": [
+          "Merchant"
+        ],
+        "summary": "Create a new business profile",
+        "description": "Create a new merchant business profile after wallet connection (onboarding step)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBusinessRequest"
+              },
+              "examples": {
+                "basic_business": {
+                  "summary": "Minimal required fields",
+                  "value": {
+                    "walletAddress": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6",
+                    "businessName": "Tech Innovations Ltd"
+                  }
+                },
+                "complete_business": {
+                  "summary": "Complete business profile",
+                  "value": {
+                    "walletAddress": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6",
+                    "businessName": "Digital Solutions Inc",
+                    "country": "Nigeria",
+                    "payoutPreferences": {
+                      "currency": "NGN",
+                      "method": "bank_transfer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Business created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BusinessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input data (missing wallet address or business name)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Wallet address is required"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Wallet address already linked or business name already exists",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Wallet address already linked to a business"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Merchant"
+        ],
+        "summary": "Get all businesses (Admin endpoint)",
+        "description": "Retrieve list of all merchant businesses - typically for admin dashboard. No input parameters required.",
+        "responses": {
+          "200": {
+            "description": "Businesses retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BusinessListResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/merchants/wallet/{walletAddress}": {
+      "get": {
+        "tags": [
+          "Merchant"
+        ],
+        "summary": "Get business profile by wallet address",
+        "description": "Retrieve merchant business profile using their wallet address",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "walletAddress",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Merchant's wallet address",
+            "example": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Business profile retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Merchant"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid wallet address format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Business not found for this wallet address",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Business not found for this wallet"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}

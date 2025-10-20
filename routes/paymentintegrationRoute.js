@@ -11,11 +11,103 @@ const {
 
 /**
  * @swagger
- * /api/pay/create-payment:
+ * components:
+ *   schemas:
+ *     CreatePaymentRequest:
+ *       type: object
+ *       required:
+ *         - amount
+ *         - method
+ *       properties:
+ *         amount:
+ *           type: number
+ *           minimum: 0.01
+ *           description: Payment amount
+ *           example: 1000.50
+ *         currency:
+ *           type: string
+ *           default: "NGN"
+ *           description: Payment currency
+ *           example: 'NGN'
+ *         method:
+ *           type: string
+ *           enum: [card, opay, bank_transfer]
+ *           description: Payment method
+ *           example: 'card'
+ *         customer:
+ *           type: object
+ *           description: Customer information
+ *           properties:
+ *             email:
+ *               type: string
+ *               format: email
+ *               example: 'customer@example.com'
+ *             phone:
+ *               type: string
+ *               example: '+2348123456789'
+ *             name:
+ *               type: string
+ *               example: 'John Doe'
+ *         tx_ref:
+ *           type: string
+ *           description: Optional transaction reference (auto-generated if not provided)
+ *           example: 'KP-REF-1697616000123'
+ *     PaymentResponse:
+ *       type: object
+ *       properties:
+ *         success:
+ *           type: boolean
+ *           example: true
+ *         data:
+ *           type: object
+ *           description: Response data from payment provider
+ *     StatusCheckRequest:
+ *       type: object
+ *       required:
+ *         - tx_ref
+ *       properties:
+ *         tx_ref:
+ *           type: string
+ *           description: Transaction reference to check
+ *           example: 'KP-REF-1697616000123'
+ *     StatusCheckResponse:
+ *       type: object
+ *       properties:
+ *         success:
+ *           type: boolean
+ *           example: true
+ *         data:
+ *           type: object
+ *           properties:
+ *             status:
+ *               type: string
+ *               example: 'successful'
+ *             amount:
+ *               type: number
+ *               example: 1000.50
+ *             currency:
+ *               type: string
+ *               example: 'NGN'
+ *     RedirectRequest:
+ *       type: object
+ *       description: Redirect data from payment provider
+ *       properties:
+ *         tx_ref:
+ *           type: string
+ *           description: Transaction reference
+ *           example: 'KP-REF-1697616000123'
+ *     WebhookRequest:
+ *       type: object
+ *       description: Webhook payload from payment provider
+ */
+
+/**
+ * @swagger
+ * /api/payment-integration/create-payment:
  *   post:
  *     tags: [Payment Integration]
- *     summary: Create a new payment transaction
- *     description: Initiates a new payment transaction through integrated payment gateways (Flutterwave, OPay)
+ *     summary: Create a payment with Flutterwave
+ *     description: Initiate a payment through Flutterwave payment gateway using various methods
  *     security:
  *       - BearerAuth: []
  *     requestBody:
@@ -23,98 +115,64 @@ const {
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - amount
- *               - currency
- *               - customer
- *               - gateway
- *             properties:
- *               amount:
- *                 type: number
- *                 description: Payment amount
- *                 example: 5000.00
- *               currency:
- *                 type: string
- *                 enum: [NGN, USD, EUR]
- *                 description: Payment currency
- *                 example: "NGN"
- *               customer:
- *                 type: object
- *                 required:
- *                   - email
- *                   - name
- *                 properties:
- *                   email:
- *                     type: string
- *                     format: email
- *                     example: "customer@example.com"
- *                   name:
- *                     type: string
- *                     example: "John Doe"
- *                   phone:
- *                     type: string
- *                     example: "+234812345678"
- *               gateway:
- *                 type: string
- *                 enum: [flutterwave, opay]
- *                 description: Payment gateway to use
- *                 example: "flutterwave"
- *               redirect_url:
- *                 type: string
- *                 format: uri
- *                 description: URL to redirect after payment
- *                 example: "https://yoursite.com/payment/callback"
- *               metadata:
- *                 type: object
- *                 description: Additional transaction metadata
- *                 example: {"orderId": "ORD-123", "customField": "value"}
+ *             $ref: '#/components/schemas/CreatePaymentRequest'
+ *           examples:
+ *             card_payment:
+ *               summary: Card payment example
+ *               value:
+ *                 amount: 5000.00
+ *                 currency: 'NGN'
+ *                 method: 'card'
+ *                 customer:
+ *                   email: 'john.doe@example.com'
+ *                   name: 'John Doe'
+ *                   phone: '+2348123456789'
+ *                 tx_ref: 'KP-REF-1697616000123'
+ *             opay_payment:
+ *               summary: OPay payment example
+ *               value:
+ *                 amount: 2500.00
+ *                 method: 'opay'
+ *                 customer:
+ *                   email: 'jane.smith@example.com'
+ *                   phone: '+2348123456789'
+ *                   name: 'Jane Smith'
+ *             bank_transfer:
+ *               summary: Bank transfer payment
+ *               value:
+ *                 amount: 10000.00
+ *                 method: 'bank_transfer'
+ *                 customer:
+ *                   email: 'user@example.com'
+ *                   phone: '+2348123456789'
+ *                   name: 'Test User'
  *     responses:
  *       200:
- *         description: Payment transaction created successfully
+ *         description: Payment initiated successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/PaymentResponse'
+ *       500:
+ *         description: Payment creation error
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 data:
+ *                 error:
  *                   type: object
- *                   properties:
- *                     payment_link:
- *                       type: string
- *                       format: uri
- *                       example: "https://checkout.flutterwave.com/v3/hosted/pay/abc123"
- *                     transaction_id:
- *                       type: string
- *                       example: "tx_64f5e8b2a1b2c3d4e5f6g7h8"
- *                     reference:
- *                       type: string
- *                       example: "KP-REF-1697616000123"
- *       400:
- *         description: Bad request - Invalid payment data
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
+ *                   description: Error details
  */
 router.post("/create-payment", createPayment);
 
 /**
  * @swagger
- * /api/pay/check-status:
+ * /api/payment-integration/check-status:
  *   post:
  *     tags: [Payment Integration]
- *     summary: Check payment transaction status
- *     description: Verifies the current status of a payment transaction from the payment gateway
+ *     summary: Check payment status by transaction reference
+ *     description: Verify the current status of a payment using transaction reference
  *     security:
  *       - BearerAuth: []
  *     requestBody:
@@ -122,82 +180,39 @@ router.post("/create-payment", createPayment);
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - transaction_id
- *               - gateway
- *             properties:
- *               transaction_id:
- *                 type: string
- *                 description: Transaction identifier
- *                 example: "tx_64f5e8b2a1b2c3d4e5f6g7h8"
- *               gateway:
- *                 type: string
- *                 enum: [flutterwave, opay]
- *                 description: Payment gateway used
- *                 example: "flutterwave"
- *               reference:
- *                 type: string
- *                 description: Payment reference (alternative to transaction_id)
- *                 example: "KP-REF-1697616000123"
+ *             $ref: '#/components/schemas/StatusCheckRequest'
+ *           examples:
+ *             check_status:
+ *               summary: Check payment status
+ *               value:
+ *                 tx_ref: 'KP-REF-1697616000123'
  *     responses:
  *       200:
  *         description: Payment status retrieved successfully
  *         content:
  *           application/json:
  *             schema:
+ *               $ref: '#/components/schemas/StatusCheckResponse'
+ *       500:
+ *         description: Error checking payment status
+ *         content:
+ *           application/json:
+ *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 data:
- *                   type: object
- *                   properties:
- *                     status:
- *                       type: string
- *                       enum: [pending, successful, failed, cancelled]
- *                       example: "successful"
- *                     amount:
- *                       type: number
- *                       example: 5000.00
- *                     currency:
- *                       type: string
- *                       example: "NGN"
- *                     customer:
- *                       type: object
- *                       example: {"name": "John Doe", "email": "customer@example.com"}
- *                     gateway_response:
- *                       type: object
- *                       description: Raw gateway response
- *       400:
- *         description: Bad request - Missing transaction ID or gateway
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       404:
- *         description: Transaction not found
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
+ *                 error:
+ *                   type: string
+ *                   example: "tx_ref required"
  */
 router.post("/check-status", checkStatus);
 
 /**
  * @swagger
- * /api/pay/handle-redirect:
+ * /api/payment-integration/handle-redirect:
  *   post:
  *     tags: [Payment Integration]
- *     summary: Handle payment redirect
- *     description: Processes payment gateway redirects after customer completes payment
+ *     summary: Handle payment redirect callback
+ *     description: Process payment completion redirects from payment providers
  *     security:
  *       - BearerAuth: []
  *     requestBody:
@@ -205,29 +220,12 @@ router.post("/check-status", checkStatus);
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             required:
- *               - transaction_id
- *               - gateway
- *             properties:
- *               transaction_id:
- *                 type: string
- *                 description: Transaction identifier
- *                 example: "tx_64f5e8b2a1b2c3d4e5f6g7h8"
- *               gateway:
- *                 type: string
- *                 enum: [flutterwave, opay]
- *                 description: Payment gateway
- *                 example: "flutterwave"
- *               status:
- *                 type: string
- *                 enum: [successful, failed, cancelled]
- *                 description: Payment status from gateway
- *                 example: "successful"
- *               gateway_data:
- *                 type: object
- *                 description: Additional data from payment gateway
- *                 example: {"tx_ref": "KP-REF-123", "flw_ref": "FLW-MOCK-123"}
+ *             $ref: '#/components/schemas/RedirectRequest'
+ *           examples:
+ *             redirect_data:
+ *               summary: Payment redirect data
+ *               value:
+ *                 tx_ref: 'KP-REF-1697616000123'
  *     responses:
  *       200:
  *         description: Redirect handled successfully
@@ -239,107 +237,71 @@ router.post("/check-status", checkStatus);
  *                 success:
  *                   type: boolean
  *                   example: true
- *                 message:
- *                   type: string
- *                   example: "Payment redirect processed successfully"
- *                 data:
+ *                 verified:
  *                   type: object
- *                   properties:
- *                     final_status:
- *                       type: string
- *                       example: "completed"
- *                     redirect_url:
- *                       type: string
- *                       format: uri
- *                       example: "https://yoursite.com/payment/success"
- *       400:
- *         description: Bad request - Invalid redirect data
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- *       401:
- *         description: Unauthorized - Invalid or missing authentication
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ApiError'
- */
-router.post("/handle-redirect", protect, handleRedirect);
-
-/**
- * @swagger
- * /api/pay/webhook:
- *   post:
- *     tags: [Payment Integration]
- *     summary: Handle payment gateway webhooks
- *     description: Receives and processes webhook notifications from payment gateways for transaction updates
- *     security:
- *       - BearerAuth: []
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               event:
- *                 type: string
- *                 description: Webhook event type
- *                 example: "charge.completed"
- *               data:
- *                 type: object
- *                 description: Event data from payment gateway
- *                 example: {
- *                   "id": 285959875,
- *                   "tx_ref": "KP-REF-1697616000123",
- *                   "flw_ref": "FLW-MOCK-162a1d87d9d86bb1e47e8e4c6b66da80",
- *                   "device_fingerprint": "69e6b7f0sb72037aa8428b70fbe03986c",
- *                   "amount": 5000,
- *                   "currency": "NGN",
- *                   "charged_amount": 5000,
- *                   "app_fee": 140,
- *                   "merchant_fee": 0,
- *                   "processor_response": "Approved",
- *                   "auth_model": "PIN",
- *                   "ip": "197.149.95.62",
- *                   "narration": "CARD Transaction",
- *                   "status": "successful",
- *                   "payment_type": "card",
- *                   "created_at": "2023-10-18T10:30:00.000Z",
- *                   "account_id": 17321
- *                 }
- *               created_at:
- *                 type: string
- *                 format: date-time
- *                 description: Webhook timestamp
- *                 example: "2023-10-18T10:30:00.000Z"
- *     responses:
- *       200:
- *         description: Webhook processed successfully
+ *                   description: Verification data from provider
+ *       500:
+ *         description: Error handling redirect
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
+ *                 error:
  *                   type: string
- *                   example: "Webhook processed successfully"
- *       400:
- *         description: Bad request - Invalid webhook data or signature
+ */
+router.post("/handle-redirect", protect, handleRedirect);
+
+/**
+ * @swagger
+ * /api/payment-integration/webhook:
+ *   post:
+ *     tags: [Payment Integration]
+ *     summary: Handle payment webhooks
+ *     description: Process webhook notifications from payment providers (requires verif-hash header)
+ *     security:
+ *       - BearerAuth: []
+ *     parameters:
+ *       - in: header
+ *         name: verif-hash
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Webhook verification hash from payment provider
+ *         example: 'your-webhook-secret'
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/WebhookRequest'
+ *           examples:
+ *             webhook_data:
+ *               summary: Webhook notification
+ *               value:
+ *                 event: 'charge.completed'
+ *                 data:
+ *                   tx_ref: 'KP-REF-1697616000123'
+ *                   status: 'successful'
+ *                   amount: 5000
+ *     responses:
+ *       200:
+ *         description: Webhook processed successfully
  *         content:
- *           application/json:
+ *           text/plain:
  *             schema:
- *               $ref: '#/components/schemas/ApiError'
+ *               type: string
+ *               example: 'OK'
  *       401:
  *         description: Unauthorized - Invalid webhook signature
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/ApiError'
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *                   example: "unauthorized"
  */
 router.post("/webhook", handleWebhook);
 

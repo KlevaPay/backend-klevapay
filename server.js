@@ -189,7 +189,7 @@ process.on('uncaughtException', (err) => {
 process.on('SIGTERM', () => {
   logger.info('📞 SIGTERM signal received: closing HTTP server');
   server.close(() => {
-    logger.info('🛑 HTTP server closed');
+    logger.info(' HTTP server closed');
     process.exit(0);
   });
 });
@@ -200,7 +200,7 @@ process.on('SIGTERM', () => {
 process.on('SIGINT', () => {
   logger.info('📞 SIGINT signal received: closing HTTP server');
   server.close(() => {
-    logger.info('🛑 HTTP server closed');
+    logger.info('HTTP server closed');
     process.exit(0);
   });
 });
