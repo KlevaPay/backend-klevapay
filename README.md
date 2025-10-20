@@ -5,542 +5,233 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-5.0%2B-green.svg)](https://www.mongodb.com/)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-A modern, secure merchant payment gateway backend built with Node.js, Express.js, and MongoDB. KlevaPay enables businesses to accept payments through multiple payment gateways with crypto wallet integration.
+Merchant-first payment gateway backend built with Node.js, Express, MongoDB, and on-chain integrations. KlevaPay helps businesses accept fiat and crypto payments, reconcile transactions, and settle merchants automatically.
 
-## 🚀 Key Features
+## ✨ Highlights
 
-- **🔐 JWT Authentication**: Secure token-based authentication with middleware protection
-- **💳 Multi-Gateway Support**: Integrated with Flutterwave and OPay payment gateways
-- **🌐 Crypto Wallet Integration**: Wallet-based merchant onboarding and management
-- **📊 Payment Intent System**: Advanced payment processing with status tracking
-- **🛡️ Enterprise Security**: Rate limiting, CORS, Helmet security headers, bcrypt hashing
-- **📝 Comprehensive Logging**: Winston logger with structured logging and file rotation
-- **🚦 Advanced Error Handling**: Custom ApiError class with proper HTTP status codes
-- **📚 Interactive Documentation**: Swagger/OpenAPI 3.0 documentation with try-it-out functionality
-- **⚡ Production Ready**: Environment configuration, graceful shutdown, MongoDB integration
-- **🤖 Automated Settlements**: Auto-credit merchants in fiat or USDT based on their payout preferences
+- JWT-secured endpoints with rate limiting, Helmet, and granular validation
+- Dual payment flows via Flutterwave & OPay plus smart-contract powered settlements
+- Payment Intent lifecycle with checkout links, widgets, and status transitions
+- Comprehensive transaction analytics (filters, stats, and recents) per merchant
+- Centralized logging, error handling, and Swagger-powered documentation
 
-## 📋 API Endpoints
+## 🗺️ Project Structure at a Glance
 
-### 🏥 System & Health
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | API welcome message and endpoints |
-| GET | `/api/health` | System health check and uptime |
-| GET | `/api/docs` | Interactive Swagger documentation |
-| GET | `/api/docs.json` | OpenAPI JSON specification |
+### Mermaid Diagram
 
-### 👥 Merchant Management
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/merchant` | Create new business profile | ❌ |
-| GET | `/api/merchant/wallet/{address}` | Get business by wallet address | ❌ |
-| GET | `/api/merchant` | Get all businesses (Admin) | ✅ |
+```mermaid
+graph TD
+  A[backend-klevapay]
+  A --> app[app.js]
+  A --> srv[server.js]
+  A --> cfg[config/]
+  cfg --> cfg1[connectDb.js]
+  cfg --> cfg2[swagger.js]
+  cfg --> cfg3[flutterwave.js]
+  cfg --> cfg4[opay.js]
+  A --> ctrl[controllers/]
+  ctrl --> c1[merchantController.js]
+  ctrl --> c2[paymentIntentController.js]
+  ctrl --> c3[paymentIntegrationControllers.js]
+  ctrl --> c4[cryptoIntegrationController.js]
+  A --> routes[routes/]
+  routes --> r1[merchantRoutes.js]
+  routes --> r2[paymentIntentRoute.js]
+  routes --> r3[transactionRoutes.js]
+  routes --> r4[paymentintegrationRoute.js]
+  routes --> r5[cryptoIntegration.js]
+  A --> services[services/]
+  services --> s1[PaymentIntentService.js]
+  services --> s2[paymentIntegrationServices.js]
+  services --> s3[cryptoIntegration.js]
+  services --> s4[pricefeed.js]
+  services --> s5[sendEmail.js]
+  A --> models[models/]
+   models --> m1[Merchant.js]
+   models --> m2[PaymentInent.js]
+  models --> m3[Transaction.js]
+  models --> m4[User.js]
+  models --> m5[Migration.js]
+  A --> middlewares[middlewares/]
+  middlewares --> mw1[authmiddleware.js]
+  middlewares --> mw2[errorHandler.js]
+  A --> utils[utils/]
+  utils --> u1[jwtUtils.js]
+  utils --> u2[otpUtils.js]
+  utils --> u3[Flutter.js]
+  utils --> u4[pricefeed.js]
+  utils --> u5[usdt.js]
+  A --> lib[lib/]
+  lib --> l1[logger.js]
+  lib --> l2[ApiError.js]
+  A --> scripts[scripts/]
+  scripts --> sc1[checkrates.js]
+  A --> logs[logs/]
+  logs --> lg1[combined.log]
+  logs --> lg2[app.log]
+  logs --> lg3[error.log]
+```
 
-### 💰 Payment Intents
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/payment-intents` | Create new payment intent | ✅ |
-| GET | `/api/payment-intents/{id}` | Get payment intent details | ✅ |
-| PATCH | `/api/payment-intents/{id}/status` | Update payment status | ✅ |
+### Directory Breakdown
 
-### 🔄 Payment Integration
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/pay/create-payment` | Create payment via gateways | ✅ |
-| POST | `/api/pay/check-status` | Check payment transaction status | ✅ |
-| POST | `/api/pay/handle-redirect` | Handle gateway redirects | ✅ |
-| POST | `/api/pay/webhook` | Process gateway webhooks | ✅ |
+| Path | Purpose |
+|------|---------|
+| `app.js` | Configures Express, middleware, Swagger, and mounts all routers. |
+| `server.js` | Boots the HTTP server and database connection lifecycle. |
+| `config/` | Database connector, Swagger options, and gateway credentials wiring. |
+| `controllers/` | Request handlers for merchants, payment intents, fiat gateways, and crypto flows. |
+| `middlewares/` | Global error handling, validation helpers, and JWT auth guard. |
+| `models/` | Mongoose schemas for merchants, intents (`PaymentInent.js`), transactions, migrations, and users. |
+| `routes/` | Express routers grouped by domain (`merchant`, `payment-intents`, `transactions`, `pay`, `crypto`). |
+| `services/` | Business logic: payment intents, fiat gateway adapters, contract calls, pricing feeds, email. |
+| `lib/` | Logger factory and reusable `ApiError` class. |
+| `utils/` | JWT helpers, OTP utilities, Flutterwave abstractions, token constants. |
+| `scripts/` | Operational scripts (e.g., rate checks). |
+| `logs/` | Rotating winston log outputs. |
 
-## � Automated Settlements
+> Tip: Add `routes/cryptoIntegration.js` to the Swagger `apis` array in `app.js` to expose those endpoints in the live docs.
 
-Once a transaction is persisted—whether from a smart-contract `PaymentRecorded` event or a Flutterwave webhook—the settlement engine automatically pays out funds according to each merchant's payout preferences:
+## 🔌 API Reference
 
-- **Fiat merchants** (`method: bank_transfer` or `mobile_money`) receive instant NGN transfers through Flutterwave. The bank code should be supplied in `payoutPreferences.accountDetails.routingNumber` (or `bankCode`).
-- **Crypto merchants** (`method: crypto`) get the NGN amount converted to USDT using the configured price feeds before being credited on-chain via the `creditMerchant` contract call.
+All endpoints live under `BASE_URL` (defaults to `http://localhost:4000`). Middleware such as `protect` requires a `Bearer <JWT>` header.
 
-Each settlement attempt updates the transaction status (`PROCESSING → SETTLED` or `FAILED`) and appends structured metadata (`metadata.settlement`) containing the provider reference, timestamps, and any error message.
+### Health & Docs
 
-> ℹ️ Make sure `FLUTTERWAVE_CLIENT_SECRET`, price feed variables, and the contract admin key (`ADMIN_SECRET`) are configured in your environment so both payout paths can succeed.
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| GET | `/` | Root banner with environment info and top-level routes. | Public |
+| GET | `/api/health` | Uptime and environment heartbeat. | Public |
+| GET | `/api/docs` | Swagger UI explorer. | Public |
+| GET | `/api/docs.json` | Raw OpenAPI schema. | Public |
 
-## �🛠️ Tech Stack
+### Merchant
 
-- **Runtime**: Node.js 14+
-- **Framework**: Express.js 4.18
-- **Database**: MongoDB with Mongoose ODM
-- **Authentication**: JWT with custom middleware
-- **Payment Gateways**: Flutterwave, OPay
-- **Security**: Helmet, CORS, Rate Limiting, bcrypt
-- **Logging**: Winston with file rotation
-- **Documentation**: Swagger/OpenAPI 3.0
-- **Validation**: Express Validator
-- **Email**: Nodemailer
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| POST | `/api/merchant` | Onboard a new merchant profile. | Public (protect in prod) |
+| GET | `/api/merchant/wallet/:walletAddress` | Fetch a merchant by wallet address. | Public |
+| GET | `/api/merchant` | List all merchants (admin dashboard). | Public |
 
-## 🚀 Quick Start
+### Payment Intents
+
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| POST | `/api/payment-intents` | Create a payment intent using a merchant wallet. | Public |
+| GET | `/api/payment-intents/:id` | Retrieve an intent by ID. | Public |
+| PATCH | `/api/payment-intents/:id/status` | Update intent status (e.g. `PAID`, `FAILED`). | Public |
+
+### Transactions
+
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| GET | `/api/transactions/wallet/:walletAddress` | Paginated transaction history with filters and sort. | Public |
+| GET | `/api/transactions/wallet/:walletAddress/stats` | Aggregated stats (period, success rate, totals). | Public |
+| GET | `/api/transactions/wallet/:walletAddress/recent` | Most recent transactions (configurable limit). | Public |
+
+### Payment Integration (`/api/pay`)
+
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| POST | `/api/pay/create-payment` | Initiate payment via Flutterwave or OPay. | Public |
+| POST | `/api/pay/check-status` | Verify gateway status by `tx_ref`. | Public |
+| POST | `/api/pay/handle-redirect` | Confirm redirect callbacks after checkout. | Protected (Bearer) |
+| POST | `/api/pay/webhook` | Receive provider webhooks (expects signature headers). | Provider secret |
+
+### Crypto Integration (`/api/crypto`)
+
+| Method | Path | Description | Auth |
+|--------|------|-------------|------|
+| GET | `/api/crypto/owner` | Return the smart-contract owner wallet. | Protected (Bearer) |
+| POST | `/api/crypto/add-liquidity` | Supply protocol liquidity (amount in token units). | Protected (Bearer) |
+| POST | `/api/crypto/remove-liquidity` | Withdraw liquidity from the pool. | Protected (Bearer) |
+| POST | `/api/crypto/credit-merchant` | Credit a merchant (fiat → USDT settlement). | Public (should be protected) |
+
+> Authentication policies are enforced via `middlewares/authmiddleware.js`. Harden production deployments by securing public endpoints that mutate or expose sensitive data.
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 14.0.0 or higher
-- MongoDB database (local or Atlas)
-- npm or yarn package manager
+- Node.js `>=14`
+- MongoDB instance (local or Atlas)
+- `npm` or `yarn`
 
 ### Installation
 
-1. **Clone the repository:**
+1. Clone and install dependencies
    ```bash
    git clone https://github.com/KlevaPay/backend-klevapay.git
    cd backend-klevapay
-   ```
-
-2. **Install dependencies:**
-   ```bash
    npm install
    ```
-
-3. **Set up environment variables:**
+2. Configure environment
    ```bash
    cp Example.env .env
    ```
-   
-   Edit `.env` with your configuration:
-   ```env
-   # Database
-   MONGO_URI=mongodb://localhost:27017/klevapay
-   
-   # JWT Secrets
-   JWT_SECRET=your-super-secret-jwt-key
-   JWT_REFRESH_SECRET=your-refresh-token-secret
-   
-   # Email Configuration
-   SMTP_HOST=smtp.gmail.com
-   SMTP_PORT=587
-   SMTP_USER=your-email@gmail.com
-   SMTP_PASS=your-app-password
-   
-   # Server
-   NODE_ENV=development
-   PORT=4000
-   BASE_URL=http://localhost:4000
-   
-  # Payment Gateways (Optional)
-  FLUTTERWAVE_PUBLIC_KEY=your-flutterwave-public-key
-  FLUTTERWAVE_CLIENT_SECRET=your-flutterwave-secret-key
-  OPAY_PUBLIC_KEY=your-opay-public-key
-  OPAY_SECRET_KEY=your-opay-secret-key
-   ```
-
-4. **Start the development server:**
+   Fill in MongoDB URI, JWT secrets, email SMTP, Flutterwave/OPay credentials, price feed keys, and smart-contract admin secrets.
+3. Launch the API
    ```bash
    npm run dev
    ```
+4. Check everything
+   - Root: <http://localhost:4000>
+   - Health: <http://localhost:4000/api/health>
+   - Docs: <http://localhost:4000/api/docs>
 
-5. **Verify installation:**
-   - API Root: http://localhost:4000
-   - Health Check: http://localhost:4000/api/health
-   - Documentation: http://localhost:4000/api/docs
+## 🧩 Core Components
 
-## 📁 Project Structure
+- **Database**: `config/connectDb.js` wires MongoDB, while `models/` define schemas.
+- **Error Flow**: `lib/ApiError.js` + `middlewares/errorHandler.js` standardize responses.
+- **Logging**: `lib/logger.js` provides request IDs, console/file transports (see `logs/`).
+- **Security**: Helmet, CORS, rate limiting, and JWT bearer middleware in `authmiddleware.js`.
+- **Pricing & Settlement**: `services/pricefeed.js` & `services/cryptoIntegration.js` sync on-chain rates and settlements.
 
-```
-backend-klevapay/
-├── 📄 server.js                    # Server initialization & startup
-├── 📄 app.js                       # Express app configuration & middleware
-├── 📄 package.json                 # Dependencies & npm scripts
-├── 📄 Example.env                  # Environment variables template
-├── 📄 insomnia-collection.json     # API testing collection
-│
-├── 📁 config/
-│   ├── connectDb.js               # MongoDB connection setup
-│   ├── swagger.js                 # Swagger/OpenAPI configuration
-│   ├── flutterwave.js            # Flutterwave gateway config
-│   └── opay.js                   # OPay gateway config
-│
-├── 📁 controllers/
-│   ├── merchantController.js      # Merchant business logic
-│   ├── paymentIntentController.js # Payment intent management
-│   └── paymentIntegrationControllers.js # Gateway integrations
-│
-├── 📁 middlewares/
-│   ├── errorHandler.js           # Global error handling
-│   └── authmiddleware.js         # JWT authentication
-│
-├── 📁 models/
-│   ├── Merchant.js               # Merchant/Business model
-│   ├── PaymentInent.js           # Payment intent model
-│   ├── Transaction.js            # Transaction records model
-│   ├── User.js                   # User accounts model
-│   └── Migration.js              # Database migrations
-│
-├── 📁 routes/
-│   ├── merchantRoutes.js         # Merchant API routes
-│   ├── paymentIntentRoute.js     # Payment intent routes
-│   └── paymentintegrationRoute.js # Payment gateway routes
-│
-├── 📁 services/
-│   ├── PaymentIntentService.js   # Payment intent business logic
-│   ├── paymentIntegrationServices.js # Gateway service layer
-│   └── sendEmail.js              # Email notification service
-│
-├── 📁 lib/
-│   ├── ApiError.js               # Custom error handling class
-│   └── logger.js                 # Winston logging configuration
-│
-├── 📁 utils/
-│   ├── jwtUtils.js               # JWT token utilities
-│   ├── otpUtils.js               # OTP generation utilities
-│   └── Flutter.js               # Flutter/Flutterwave utilities
-│
-└── 📁 logs/                      # Application logs (auto-created)
-    ├── app.log                   # Application logs
-    ├── combined.log              # All logs combined
-    └── error.log                 # Error logs only
-```
+## 🔧 npm Scripts
 
-## 🔧 Available NPM Scripts
+| Script | Description |
+|--------|-------------|
+| `npm start` | Run the production server (`server.js`). |
+| `npm run dev` | Hot-reload development server via nodemon. |
+| `npm run build` | Dependency install hook (placeholder build step). |
+| `npm test` | Execute Jest test suite (implement specs in `__tests__/`). |
+| `npm run lint` | ESLint scan across the repo. |
+| `npm run lint:fix` | Auto-fix lint issues where possible. |
 
-```bash
-# Development
-npm run dev           # Start development server with auto-reload (nodemon)
-npm start            # Start production server
-npm run build        # Install dependencies and build
+## ⚙️ Environment Cheat Sheet
 
-# Testing & Quality (Future Implementation)
-npm test             # Run test suite with Jest
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint issues automatically
-```
+| Variable | Why it matters |
+|----------|----------------|
+| `MONGO_URI` | MongoDB connection string. |
+| `PORT` / `BASE_URL` | HTTP port & absolute base used by Swagger links. |
+| `JWT_SECRET` / `JWT_REFRESH_SECRET` | Token signing secrets for `authmiddleware`. |
+| `FLUTTERWAVE_PUBLIC_KEY` / `FLUTTERWAVE_CLIENT_SECRET` | Flutterwave REST credentials. |
+| `OPAY_PUBLIC_KEY` / `OPAY_SECRET_KEY` | OPay integration keys. |
+| `ADMIN_SECRET` / price feed keys | Required for on-chain settlements & FX conversion. |
+| `SMTP_*` | Email notifications via `services/sendEmail.js`. |
 
-## 💼 Request Examples
+Keep secrets out of version control and rotate them regularly.
 
-### Create Merchant Business
-```bash
-curl -X POST http://localhost:4000/api/merchant \
-  -H "Content-Type: application/json" \
-  -d '{
-    "walletAddress": "0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6",
-    "businessName": "Tech Innovations Ltd",
-    "payoutPreferences": {
-      "currency": "NGN",
-      "method": "bank_transfer"
-    }
-  }'
-```
+## 📈 Monitoring & Logs
 
-### Create Payment Intent
-```bash
-curl -X POST http://localhost:4000/api/payment-intents \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer your-jwt-token" \
-  -d '{
-    "amount": 1000.50,
-    "currency": "NGN",
-    "merchantId": "64f5e8b2a1b2c3d4e5f6g7h8",
-    "description": "Payment for order #12345"
-  }'
-```
+- **Health endpoint** — `/api/health` for uptime and environment.
+- **Logs** — view `logs/*.log` or plug into an external aggregator.
+- **Swagger** — try-it-out friendly docs at `/api/docs` (ensure `routes/cryptoIntegration.js` is included).
 
-### Create Payment Transaction
-```bash
-curl -X POST http://localhost:4000/api/pay/create-payment \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer your-jwt-token" \
-  -d '{
-    "amount": 5000.00,
-    "currency": "NGN",
-    "customer": {
-      "email": "customer@example.com",
-      "name": "John Doe",
-      "phone": "+234812345678"
-    },
-    "gateway": "flutterwave",
-    "redirect_url": "https://yoursite.com/payment/callback"
-  }'
-```
+## 🤝 Contributing & Next Steps
 
-### Check Payment Status
-```bash
-curl -X POST http://localhost:4000/api/pay/check-status \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer your-jwt-token" \
-  -d '{
-    "transaction_id": "tx_64f5e8b2a1b2c3d4e5f6g7h8",
-    "gateway": "flutterwave"
-  }'
-```
+1. Fork → branch → commit → PR (see Git workflow in repository).
+2. Add Swagger annotations for new routes and extend the README tables.
+3. Suggested future enhancements:
+   - Protect `credit-merchant` endpoint with admin-only auth.
+   - Expand Jest/Supertest coverage (tests already wired via `npm test`).
+   - Add automated CI lint/test pipeline.
 
-## 🛡️ Security Features
+## 📄 License & Support
 
-- **Rate Limiting**: 100 requests per 15 minutes per IP
-- **CORS Protection**: Configurable allowed origins
-- **Helmet Security**: Security headers for XSS, CSRF protection
-- **JWT Authentication**: Secure token-based authentication
-- **Input Validation**: Express Validator for request validation
-- **Error Sanitization**: No sensitive data in error responses
-- **Request Logging**: Comprehensive request tracking
-
-## 📊 Monitoring & Health
-
-### Health Check Endpoint
-```bash
-GET /api/health
-```
-
-**Response:**
-```json
-{
-  "status": "ok",
-  "timestamp": "2025-10-18T10:30:00.000Z",
-  "uptime": 3600.5,
-  "environment": "development",
-  "version": "1.0.0"
-}
-```
-
-### Logging
-- **File Logging**: Separate files for different log levels
-- **Console Logging**: Development-friendly console output
-- **Request Tracking**: Unique request IDs for tracing
-- **Error Logging**: Detailed error tracking with stack traces
-
-## 🔗 Payment Gateway Integration
-
-### Supported Gateways
-- **Flutterwave**: Card payments, bank transfers, mobile money
-- **OPay**: Digital wallet payments, bank transfers
-
-### Gateway Features
-- ✅ Payment creation and processing
-- ✅ Transaction status verification
-- ✅ Webhook handling for real-time updates
-- ✅ Redirect handling for payment completion
-- ✅ Multi-currency support
-
-## 🎯 Data Models
-
-### Merchant Schema
-```javascript
-{
-  walletAddress: String,      // Crypto wallet address (unique)
-  businessName: String,       // Business name (unique)
-  payoutPreferences: {
-    currency: String,         // NGN, USD, EUR, USDT, BTC, ETH
-    method: String,          // bank_transfer, mobile_money, crypto
-    accountDetails: Object   // Bank/wallet details
-  },
-  kycStatus: String,         // pending, approved, rejected
-  country: String,           // Default: Nigeria
-  timestamps: true
-}
-```
-
-### Payment Intent Schema
-```javascript
-{
-  merchantId: ObjectId,      // Reference to merchant
-  orderId: String,          // Merchant order ID
-  amount: Number,           // Payment amount
-  sourceCurrency: String,   // Original currency
-  targetCurrency: String,   // Target currency
-  status: String,           // PENDING, PAID, SETTLED, FAILED
-  checkoutLink: String,     // Payment URL
-  widgetToken: String,      // Widget integration token
-  metadata: Object,         // Additional data
-  timestamps: true
-}
-```
-
-### Transaction Schema
-```javascript
-{
-  merchantId: ObjectId,     // Reference to merchant
-  merchantWalletAddress: String, // Merchant wallet snapshot
-  reference: String,        // Transaction reference (indexed)
-  transactionReference: String, // Alias for reference (tx_ref)
-  payer: String,            // Payer wallet/email
-  fiatOrTokenType: String,  // FIAT or CRYPTO
-  paymentType: String,      // FIAT_TO_FIAT, FIAT_TO_CRYPTO, CRYPTO_TO_CRYPTO, etc.
-  amount: Number,           // Normalized human amount
-  amountInMinor: String,    // Raw on-chain/base unit amount
-  fiatEquivalent: Number,   // Fiat conversion amount
-  fiatCurrency: String,     // Default: NGN
-  chargeFee: Number,        // Platform/gateway fee
-  symbol: String,           // Token/fiat symbol (USDT, NGN)
-  currency: String,         // Legacy currency field
-  method: String,           // CARD, BANK, WALLET, CRYPTO, FIAT
-  provider: String,         // CONTRACT, FLUTTERWAVE, OPAY, MANUAL
-  status: String,           // PENDING, PAID, SETTLED, FAILED, SUCCESS, PROCESSING
-  eventTimestamp: Date,     // When the event happened
-  recordedAt: Date,         // When we persisted it
-  blockchain: {             // On-chain metadata when available
-    transactionHash: String,
-    blockNumber: Number,
-    network: String
-  },
-  opayReference: String,    // Gateway reference (legacy)
-  providerResponse: Object, // Raw gateway response
-  metadata: Object,         // Additional metadata (source, narration, etc.)
-  timestamps: true
-}
-```
-
-## 📋 Error Response Format
-
-All API endpoints follow a consistent error response format:
-
-```json
-{
-  "success": false,
-  "error": {
-    "name": "ApiError",
-    "message": "Descriptive error message",
-    "statusCode": 400,
-    "details": null
-  }
-}
-```
-
-### Common HTTP Status Codes
-- `200 OK` - Request successful
-- `201 Created` - Resource created successfully
-- `400 Bad Request` - Invalid request data or validation errors
-- `401 Unauthorized` - Authentication required or invalid credentials
-- `403 Forbidden` - Access denied
-- `404 Not Found` - Resource not found
-- `409 Conflict` - Resource already exists
-- `422 Unprocessable Entity` - Validation failed
-- `429 Too Many Requests` - Rate limit exceeded
-- `500 Internal Server Error` - Server error
-
-## 📚 API Documentation
-
-**Interactive Documentation**: http://localhost:4000/api/docs
-
-The Swagger documentation includes:
-- ✅ **Interactive API Explorer** with try-it-out functionality
-- ✅ **Request/Response Examples** for all endpoints
-- ✅ **Model Schemas** and validation rules
-- ✅ **Authentication Examples** with JWT tokens
-- ✅ **Error Response Documentation**
-- ✅ **Gateway Integration Examples**
-
-**Additional Resources**:
-- **OpenAPI JSON**: http://localhost:4000/api/docs.json
-- **Health Check**: http://localhost:4000/api/health
-- **API Root**: http://localhost:4000/
-
-## 🔧 Development
-
-### Prerequisites for Development
-```bash
-# Install nodemon for development
-npm install -g nodemon
-
-# Run in development mode
-npm run dev
-
-# Run tests (when implemented)
-npm test
-
-# Code linting
-npm run lint
-npm run lint:fix
-```
-
-### Database Setup
-1. **Local MongoDB:**
-   ```bash
-   # Install MongoDB locally
-   brew install mongodb/brew/mongodb-community
-   
-   # Start MongoDB
-   brew services start mongodb/brew/mongodb-community
-   ```
-
-2. **MongoDB Atlas (Recommended for production):**
-   - Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
-   - Create cluster and get connection string
-   - Update `MONGO_URI` in `.env`
-
-### Environment Configurations
-
-**Development:**
-```env
-NODE_ENV=development
-PORT=4000
-MONGO_URI=mongodb://localhost:27017/klevapay-dev
-```
-
-**Production:**
-```env
-NODE_ENV=production
-PORT=8080
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/klevapay
-```
-
-## 🚀 Deployment
-
-### Server Requirements
-- Node.js 14.0.0+
-- MongoDB 5.0+
-- PM2 (for production process management)
-
-### Production Deployment
-```bash
-# Install PM2 globally
-npm install -g pm2
-
-# Start with PM2
-pm2 start server.js --name "klevapay-backend"
-
-# Configure PM2 startup
-pm2 startup
-pm2 save
-```
-
-### Environment Variables (Production)
-Ensure all required environment variables are set in production:
-- `MONGO_URI` - MongoDB connection string
-- `JWT_SECRET` - Strong JWT secret key
-- `JWT_REFRESH_SECRET` - Strong refresh token secret
-- `NODE_ENV=production`
-- Gateway credentials (Flutterwave, OPay)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow existing code style and conventions
-- Add comprehensive Swagger documentation for new endpoints
-- Include error handling and validation
-- Update README.md for new features
-- Add appropriate logging
-
-## 📄 License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-- **Documentation**: http://localhost:4000/api/docs
-- **Issues**: [GitHub Issues](https://github.com/KlevaPay/backend-klevapay/issues)
-- **Email**: dev@klevapay.com
-
-## 🎯 Roadmap
-
-- [ ] User authentication system (register, login, password reset)
-- [ ] Advanced KYC verification system
-- [ ] Multi-signature wallet support
-- [ ] Advanced analytics and reporting
-- [ ] Automated testing suite
-- [ ] GraphQL API support
-- [ ] Real-time notifications with WebSockets
-- [ ] Multi-language support
+- Licensed under the [ISC License](LICENSE).
+- Issues & discussions: <https://github.com/KlevaPay/backend-klevapay/issues>
+- Dev team: `dev@klevapay.com`
 
 ---
 
-**Built with ❤️ by the KlevaPay Team**
+Powered by the KlevaPay team with ❤️
