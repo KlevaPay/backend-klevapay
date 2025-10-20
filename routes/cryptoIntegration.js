@@ -5,9 +5,9 @@ const { protect } = require('../middlewares/authmiddleware');
 const {
   creditMerchant,
   getOwner,
-  getTotalLiquidity,
+  // getTotalLiquidity,
   addLiquidity,
-  payWithToken,
+  // payWithToken,
   removeLiquidity
 } = require("../controllers/cryptoIntegrationController");
 
@@ -108,7 +108,7 @@ const {
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-router.get("/total-liquidity", getTotalLiquidity);
+// router.get("/total-liquidity", getTotalLiquidity);
 router.get("/owner", protect, getOwner);
 
 /**
@@ -192,7 +192,7 @@ router.get("/owner", protect, getOwner);
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-router.post("/add-liquidity", addLiquidity);
+router.post("/add-liquidity", protect, addLiquidity);
 // router.post("/pay-with-token", protect, payWithToken);
 
 /**

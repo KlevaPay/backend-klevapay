@@ -106,7 +106,7 @@ const {
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-router.post("/create-payment", protect, createPayment);
+router.post("/create-payment", createPayment);
 
 /**
  * @swagger
@@ -189,7 +189,7 @@ router.post("/create-payment", protect, createPayment);
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-router.post("/check-status", protect, checkStatus);
+router.post("/check-status", checkStatus);
 
 /**
  * @swagger
@@ -341,6 +341,6 @@ router.post("/handle-redirect", protect, handleRedirect);
  *             schema:
  *               $ref: '#/components/schemas/ApiError'
  */
-router.post("/webhook", protect, handleWebhook);
+router.post("/webhook", handleWebhook);
 
 module.exports = router;

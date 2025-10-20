@@ -4366,3 +4366,477 @@
   environment: 'development',
   timestamp: '2025-10-18 22:14:43'
 }
+{
+  error: /Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:344
+  router.post("/webhook", , handleWebhook);
+                          ^
+  
+  SyntaxError: Unexpected token ','
+      at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+      at Module._compile (node:internal/modules/cjs/loader:1704:20)
+      at Object..js (node:internal/modules/cjs/loader:1895:10)
+      at Module.load (node:internal/modules/cjs/loader:1465:32)
+      at Function._load (node:internal/modules/cjs/loader:1282:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+      at Module.require (node:internal/modules/cjs/loader:1487:12)
+      at require (node:internal/modules/helpers:135:16)
+      at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ','\n" +
+    '/Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:344\n' +
+    'router.post("/webhook", , handleWebhook);\n' +
+    '                        ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ','\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21)',
+  stack: '/Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:344\n' +
+    'router.post("/webhook", , handleWebhook);\n' +
+    '                        ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ','\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21)',
+  exception: true,
+  date: 'Sun Oct 19 2025 22:47:42 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 47545,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/macbook/W3_finalProject/backend-klevapay',
+    execPath: '/usr/local/bin/node',
+    version: 'v22.17.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/macbook/W3_finalProject/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 117374976,
+      heapTotal: 63242240,
+      heapUsed: 41542328,
+      external: 20577489,
+      arrayBuffers: 18268024
+    }
+  },
+  os: {
+    loadavg: [ 8.0400390625, 6.224609375, 5.4013671875 ],
+    uptime: 787050
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1662,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1704,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1895,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1487,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 135,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: '/Users/macbook/W3_finalProject/backend-klevapay/app.js',
+      function: null,
+      line: 107,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:42'
+}
+{
+  error: /Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:192
+  checkStatus);
+             ^
+  
+  SyntaxError: Unexpected token ')'
+      at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+      at Module._compile (node:internal/modules/cjs/loader:1704:20)
+      at Object..js (node:internal/modules/cjs/loader:1895:10)
+      at Module.load (node:internal/modules/cjs/loader:1465:32)
+      at Function._load (node:internal/modules/cjs/loader:1282:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+      at Module.require (node:internal/modules/cjs/loader:1487:12)
+      at require (node:internal/modules/helpers:135:16)
+      at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ')'\n" +
+    '/Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:192\n' +
+    'checkStatus);\n' +
+    '           ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ')'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21)',
+  stack: '/Users/macbook/W3_finalProject/backend-klevapay/routes/paymentintegrationRoute.js:192\n' +
+    'checkStatus);\n' +
+    '           ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ')'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:107:21)',
+  exception: true,
+  date: 'Sun Oct 19 2025 22:48:02 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 47774,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/macbook/W3_finalProject/backend-klevapay',
+    execPath: '/usr/local/bin/node',
+    version: 'v22.17.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/macbook/W3_finalProject/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 104562688,
+      heapTotal: 62980096,
+      heapUsed: 41869456,
+      external: 20577488,
+      arrayBuffers: 18268023
+    }
+  },
+  os: { loadavg: [ 7.46875, 6.2353515625, 5.42529296875 ], uptime: 787070 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1662,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1704,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1895,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1487,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 135,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: '/Users/macbook/W3_finalProject/backend-klevapay/app.js',
+      function: null,
+      line: 107,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:02'
+}
+{
+  error: /Users/macbook/W3_finalProject/backend-klevapay/routes/cryptoIntegration.js:348
+  router.post("/credit-merchant", , creditMerchant);
+                                  ^
+  
+  SyntaxError: Unexpected token ','
+      at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+      at Module._compile (node:internal/modules/cjs/loader:1704:20)
+      at Object..js (node:internal/modules/cjs/loader:1895:10)
+      at Module.load (node:internal/modules/cjs/loader:1465:32)
+      at Function._load (node:internal/modules/cjs/loader:1282:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+      at Module.require (node:internal/modules/cjs/loader:1487:12)
+      at require (node:internal/modules/helpers:135:16)
+      at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:20:22),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ','\n" +
+    '/Users/macbook/W3_finalProject/backend-klevapay/routes/cryptoIntegration.js:348\n' +
+    'router.post("/credit-merchant", , creditMerchant);\n' +
+    '                                ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ','\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:20:22)',
+  stack: '/Users/macbook/W3_finalProject/backend-klevapay/routes/cryptoIntegration.js:348\n' +
+    'router.post("/credit-merchant", , creditMerchant);\n' +
+    '                                ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ','\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1704:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1487:12)\n' +
+    '    at require (node:internal/modules/helpers:135:16)\n' +
+    '    at Object.<anonymous> (/Users/macbook/W3_finalProject/backend-klevapay/app.js:20:22)',
+  exception: true,
+  date: 'Sun Oct 19 2025 23:46:11 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 76631,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/macbook/W3_finalProject/backend-klevapay',
+    execPath: '/usr/local/bin/node',
+    version: 'v22.17.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/macbook/W3_finalProject/backend-klevapay/server.js'
+    ],
+    memoryUsage: {
+      rss: 106840064,
+      heapTotal: 58523648,
+      heapUsed: 32553888,
+      external: 21000223,
+      arrayBuffers: 18264480
+    }
+  },
+  os: {
+    loadavg: [ 4.46728515625, 4.861328125, 4.98828125 ],
+    uptime: 790559
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1662,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1704,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1895,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1487,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 135,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/macbook/W3_finalProject/backend-klevapay/app.js',
+      function: null,
+      line: 20,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:11'
+}

@@ -18,6 +18,7 @@ A modern, secure merchant payment gateway backend built with Node.js, Express.js
 - **🚦 Advanced Error Handling**: Custom ApiError class with proper HTTP status codes
 - **📚 Interactive Documentation**: Swagger/OpenAPI 3.0 documentation with try-it-out functionality
 - **⚡ Production Ready**: Environment configuration, graceful shutdown, MongoDB integration
+- **🤖 Automated Settlements**: Auto-credit merchants in fiat or USDT based on their payout preferences
 
 ## 📋 API Endpoints
 
@@ -51,7 +52,18 @@ A modern, secure merchant payment gateway backend built with Node.js, Express.js
 | POST | `/api/pay/handle-redirect` | Handle gateway redirects | ✅ |
 | POST | `/api/pay/webhook` | Process gateway webhooks | ✅ |
 
-## 🛠️ Tech Stack
+## � Automated Settlements
+
+Once a transaction is persisted—whether from a smart-contract `PaymentRecorded` event or a Flutterwave webhook—the settlement engine automatically pays out funds according to each merchant's payout preferences:
+
+- **Fiat merchants** (`method: bank_transfer` or `mobile_money`) receive instant NGN transfers through Flutterwave. The bank code should be supplied in `payoutPreferences.accountDetails.routingNumber` (or `bankCode`).
+- **Crypto merchants** (`method: crypto`) get the NGN amount converted to USDT using the configured price feeds before being credited on-chain via the `creditMerchant` contract call.
+
+Each settlement attempt updates the transaction status (`PROCESSING → SETTLED` or `FAILED`) and appends structured metadata (`metadata.settlement`) containing the provider reference, timestamps, and any error message.
+
+> ℹ️ Make sure `FLUTTERWAVE_CLIENT_SECRET`, price feed variables, and the contract admin key (`ADMIN_SECRET`) are configured in your environment so both payout paths can succeed.
+
+## �🛠️ Tech Stack
 
 - **Runtime**: Node.js 14+
 - **Framework**: Express.js 4.18
@@ -110,11 +122,11 @@ A modern, secure merchant payment gateway backend built with Node.js, Express.js
    PORT=4000
    BASE_URL=http://localhost:4000
    
-   # Payment Gateways (Optional)
-   FLUTTERWAVE_PUBLIC_KEY=your-flutterwave-public-key
-   FLUTTERWAVE_SECRET_KEY=your-flutterwave-secret-key
-   OPAY_PUBLIC_KEY=your-opay-public-key
-   OPAY_SECRET_KEY=your-opay-secret-key
+  # Payment Gateways (Optional)
+  FLUTTERWAVE_PUBLIC_KEY=your-flutterwave-public-key
+  FLUTTERWAVE_CLIENT_SECRET=your-flutterwave-secret-key
+  OPAY_PUBLIC_KEY=your-opay-public-key
+  OPAY_SECRET_KEY=your-opay-secret-key
    ```
 
 4. **Start the development server:**
@@ -341,14 +353,32 @@ GET /api/health
 ```javascript
 {
   merchantId: ObjectId,     // Reference to merchant
+  merchantWalletAddress: String, // Merchant wallet snapshot
   reference: String,        // Transaction reference (indexed)
-  amount: Number,          // Transaction amount
-  currency: String,        // Default: NGN
-  method: String,          // CARD, BANK, WALLET
-  status: String,          // PENDING, PAID, SETTLED, FAILED
-  opayReference: String,   // Gateway reference
+  transactionReference: String, // Alias for reference (tx_ref)
+  payer: String,            // Payer wallet/email
+  fiatOrTokenType: String,  // FIAT or CRYPTO
+  paymentType: String,      // FIAT_TO_FIAT, FIAT_TO_CRYPTO, CRYPTO_TO_CRYPTO, etc.
+  amount: Number,           // Normalized human amount
+  amountInMinor: String,    // Raw on-chain/base unit amount
+  fiatEquivalent: Number,   // Fiat conversion amount
+  fiatCurrency: String,     // Default: NGN
+  chargeFee: Number,        // Platform/gateway fee
+  symbol: String,           // Token/fiat symbol (USDT, NGN)
+  currency: String,         // Legacy currency field
+  method: String,           // CARD, BANK, WALLET, CRYPTO, FIAT
+  provider: String,         // CONTRACT, FLUTTERWAVE, OPAY, MANUAL
+  status: String,           // PENDING, PAID, SETTLED, FAILED, SUCCESS, PROCESSING
+  eventTimestamp: Date,     // When the event happened
+  recordedAt: Date,         // When we persisted it
+  blockchain: {             // On-chain metadata when available
+    transactionHash: String,
+    blockNumber: Number,
+    network: String
+  },
+  opayReference: String,    // Gateway reference (legacy)
   providerResponse: Object, // Raw gateway response
-  metadata: Object,        // Additional data
+  metadata: Object,         // Additional metadata (source, narration, etc.)
   timestamps: true
 }
 ```

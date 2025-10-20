@@ -3976,3 +3976,1309 @@
   environment: 'development',
   timestamp: '2025-10-19 12:28:44'
 }
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:44'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:07:46'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:00'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:02'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:13'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:15'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:15'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:15'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:15'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:15'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:19'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:20'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:20'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:20'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:20'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:09:20'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:28'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:31'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:33'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:33'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:33'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:33'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:30:33'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/pay/create-payment',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:41:38'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/pay/create-payment',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:41:40'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/pay/create-payment',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:41:51'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/pay/create-payment',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:44:14'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:50'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:52'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:52'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:52'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:52'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:44:52'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error No token provided',
+  stack: 'ApiError: No token provided\n' +
+    '    at ApiError.unauthorized (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:37:12)\n' +
+    '    at exports.protect (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/authmiddleware.js:8:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at Function.handle (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:175:3)',
+  statusCode: 401,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/pay/webhook',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:47:27'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:43'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:45'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:45'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:45'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:45'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:47:45'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:03'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:04'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:04'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:04'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:04'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:04'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:06'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:07'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:07'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:07'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:07'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:48:07'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'x9qoin125',
+  name: 'ApiError',
+  message: 'Application Error Route /api/pay/transactions/wallet/%7B%7BmerchantWallet%7D%7D not found',
+  stack: 'ApiError: Route /api/pay/transactions/wallet/%7B%7BmerchantWallet%7D%7D not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/pay/transactions/wallet/%7B%7BmerchantWallet%7D%7D',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:48:55'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:48:55 +0000] "GET /api/pay/transactions/wallet/%7B%7BmerchantWallet%7D%7D HTTP/1.1" 404 1442 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'x9qoin125',
+  timestamp: '2025-10-19 22:48:55'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'vgve2191h',
+  name: 'ApiError',
+  message: 'Application Error Route /api/pay/transactions/wallet/merchantWallet not found',
+  stack: 'ApiError: Route /api/pay/transactions/wallet/merchantWallet not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/pay/transactions/wallet/merchantWallet',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:49:13'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:49:13 +0000] "GET /api/pay/transactions/wallet/merchantWallet HTTP/1.1" 404 1418 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'vgve2191h',
+  timestamp: '2025-10-19 22:49:13'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'u3kq2lz9y',
+  name: 'ApiError',
+  message: 'Application Error Route /api/transactions/wallet/%7B%7BmerchantWallet%7D%7D not found',
+  stack: 'ApiError: Route /api/transactions/wallet/%7B%7BmerchantWallet%7D%7D not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:94:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'GET',
+  url: '/api/transactions/wallet/%7B%7BmerchantWallet%7D%7D',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:49:32'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:49:32 +0000] "GET /api/transactions/wallet/%7B%7BmerchantWallet%7D%7D HTTP/1.1" 404 1434 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'u3kq2lz9y',
+  timestamp: '2025-10-19 22:49:32'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'z7x55981t',
+  name: 'ApiError',
+  message: 'Application Error Route /api/api/pay/check-status not found',
+  stack: 'ApiError: Route /api/api/pay/check-status not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/api/pay/check-status',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:51:36'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:51:36 +0000] "POST /api/api/pay/check-status HTTP/1.1" 404 1382 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'z7x55981t',
+  timestamp: '2025-10-19 22:51:36'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '0dhzkhzhz',
+  name: 'ApiError',
+  message: 'Application Error Route /api/crypto/pay not found',
+  stack: 'ApiError: Route /api/crypto/pay not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/crypto/pay',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:57:20'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:57:20 +0000] "POST /api/crypto/pay HTTP/1.1" 404 1362 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '0dhzkhzhz',
+  timestamp: '2025-10-19 22:57:20'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:33'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:35'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:35'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:35'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:35'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:35'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:40'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:42'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:42'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:42'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:42'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:42'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:47'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:48'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:48'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:48'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:48'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:48'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:55'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:57'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:57'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:57'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:57'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 22:58:57'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'hvuydoke5',
+  name: 'ApiError',
+  message: 'Application Error Route /api/crypto/pay not found',
+  stack: 'ApiError: Route /api/crypto/pay not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/crypto/pay',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 22:59:03'
+}
+{
+  message: '::1 - - [19/Oct/2025:21:59:03 +0000] "POST /api/crypto/pay HTTP/1.1" 404 1362 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'hvuydoke5',
+  timestamp: '2025-10-19 22:59:03'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:43'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:45'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:46'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:46'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:46'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:46'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:01:46'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:48'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:50'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:50'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:50'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:50'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:02:50'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:54'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:57'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:57'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:57'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:57'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:21:57'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:38'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:40'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:40'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:40'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:40'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:22:40'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:23:40'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:55'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:58'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:58'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:58'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:58'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:41:58'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  walletAddress: '0xa19f8d5cc8fca75b643f9938c1a0fbb76d15b222',
+  businessName: 'Demo NGN Merchant',
+  level: 'info',
+  message: 'New business creation attempt',
+  timestamp: '2025-10-19 23:42:01'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  id: new ObjectId("68f56939813198d58c2b8c28"),
+  walletAddress: '0xa19f8d5cc8fca75b643f9938c1a0fbb76d15b222',
+  level: 'info',
+  message: 'Business created successfully',
+  timestamp: '2025-10-19 23:42:01'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  walletAddress: '0x5d0dcaf5da46c3d935644d6a187fb4b58f987654',
+  businessName: 'Demo Crypto Merchant',
+  level: 'info',
+  message: 'New business creation attempt',
+  timestamp: '2025-10-19 23:42:51'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  id: new ObjectId("68f5696c813198d58c2b8c2c"),
+  walletAddress: '0x5d0dcaf5da46c3d935644d6a187fb4b58f987654',
+  level: 'info',
+  message: 'Business created successfully',
+  timestamp: '2025-10-19 23:42:52'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  walletAddress: '0xa19f8d5cc8fca75b643f9938c1a0fbb76d15b222',
+  businessName: 'Demo NGN Merchant',
+  level: 'info',
+  message: 'New business creation attempt',
+  timestamp: '2025-10-19 23:43:39'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  name: 'ApiError',
+  message: 'Application Error Wallet address already linked to a business',
+  stack: 'ApiError: Wallet address already linked to a business\n' +
+    '    at ApiError.conflict (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:67:12)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/controllers/merchantController.js:18:38\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  statusCode: 409,
+  requestId: undefined,
+  method: 'POST',
+  url: '/api/merchant',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 23:43:40'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'rsylaq3c0',
+  name: 'ApiError',
+  message: 'Application Error Route /api/pay/credit-merchant not found',
+  stack: 'ApiError: Route /api/pay/credit-merchant not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/pay/credit-merchant',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 23:45:59'
+}
+{
+  message: '::1 - - [19/Oct/2025:22:45:59 +0000] "POST /api/pay/credit-merchant HTTP/1.1" 404 1380 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: 'rsylaq3c0',
+  timestamp: '2025-10-19 23:45:59'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:12'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:15'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:15'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:15'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:15'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-19 23:46:15'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '0a9lp816w',
+  name: 'ApiError',
+  message: 'Application Error Route /api/pay/credit-merchant not found',
+  stack: 'ApiError: Route /api/pay/credit-merchant not found\n' +
+    '    at ApiError.notFound (/Users/macbook/W3_finalProject/backend-klevapay/lib/ApiError.js:57:12)\n' +
+    '    at notFoundHandler (/Users/macbook/W3_finalProject/backend-klevapay/middlewares/errorHandler.js:96:26)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)\n' +
+    '    at /Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:286:9\n' +
+    '    at Function.process_params (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at urlencodedParser (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/body-parser/lib/types/urlencoded.js:85:7)\n' +
+    '    at Layer.handle [as handle_request] (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at trim_prefix (/Users/macbook/W3_finalProject/backend-klevapay/node_modules/express/lib/router/index.js:328:13)',
+  statusCode: 404,
+  method: 'POST',
+  url: '/api/pay/credit-merchant',
+  userAgent: 'PostmanRuntime/7.49.0',
+  ip: '::1',
+  level: 'error',
+  timestamp: '2025-10-19 23:46:29'
+}
+{
+  message: '::1 - - [19/Oct/2025:22:46:29 +0000] "POST /api/pay/credit-merchant HTTP/1.1" 404 1380 "-" "PostmanRuntime/7.49.0"',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  requestId: '0a9lp816w',
+  timestamp: '2025-10-19 23:46:29'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:19'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:22'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:22'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:22'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:22'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 06:57:22'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 08:48:43'
+}
