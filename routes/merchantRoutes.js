@@ -65,7 +65,7 @@ const merchantController = require('../controllers/merchantController');
 
 /**
  * @swagger
- * /api/merchants:
+ * /api/merchant:
  *   post:
  *     tags: [Merchant]
  *     summary: Create a new business profile
@@ -143,7 +143,7 @@ router.post(
 
 /**
  * @swagger
- * /api/merchants/wallet/{walletAddress}:
+ * /api/merchant/wallet/{walletAddress}:
  *   get:
  *     tags: [Merchant]
  *     summary: Get business profile by wallet address
@@ -204,7 +204,7 @@ router.get(
 
 /**
  * @swagger
- * /api/merchants:
+ * /api/merchant:
  *   get:
  *     tags: [Merchant]
  *     summary: Get all businesses (Admin endpoint)

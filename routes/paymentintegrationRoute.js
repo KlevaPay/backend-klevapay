@@ -48,6 +48,26 @@ const {
  *             name:
  *               type: string
  *               example: 'John Doe'
+ *         merchant:
+ *           type: object
+ *           description: Optional merchant metadata forwarded to the gateway
+ *           properties:
+ *             merchantId:
+ *               type: string
+ *               example: '64f5e8b2a1b2c3d4e5f6g7h8'
+ *             walletAddress:
+ *               type: string
+ *               example: '0x742E4C8e9b6Ea8B6f7A7C6A1e2D8F3b9C1a4B5E6'
+ *             email:
+ *               type: string
+ *               example: 'merchant@example.com'
+ *             businessName:
+ *               type: string
+ *               example: 'Tech Innovations Ltd'
+ *         metadata:
+ *           type: object
+ *           additionalProperties: true
+ *           description: Extra contextual data persisted with the transaction
  *         tx_ref:
  *           type: string
  *           description: Optional transaction reference (auto-generated if not provided)
@@ -60,7 +80,8 @@ const {
  *           example: true
  *         data:
  *           type: object
- *           description: Response data from payment provider
+ *           description: Payment provider response payload (Flutterwave)
+ *           additionalProperties: true
  *     StatusCheckRequest:
  *       type: object
  *       required:
@@ -68,8 +89,8 @@ const {
  *       properties:
  *         tx_ref:
  *           type: string
- *           description: Transaction reference to check
- *           example: 'KP-REF-1697616000123'
+ *           description: Transaction reference created during payment initiation
+ *           example: 'tx-1697616000123'
  *     StatusCheckResponse:
  *       type: object
  *       properties:
@@ -88,28 +109,28 @@ const {
  *             currency:
  *               type: string
  *               example: 'NGN'
- *     RedirectRequest:
+ *     RedirectVerificationRequest:
  *       type: object
- *       description: Redirect data from payment provider
+ *       required:
+ *         - tx_ref
  *       properties:
  *         tx_ref:
  *           type: string
- *           description: Transaction reference
- *           example: 'KP-REF-1697616000123'
+ *           description: Transaction reference attached to the hosted checkout session
+ *           example: 'tx-1697616000123'
  *     WebhookRequest:
  *       type: object
- *       description: Webhook payload from payment provider
+ *       description: Raw webhook payload from Flutterwave (forwarded verbatim)
+ *       additionalProperties: true
  */
 
 /**
  * @swagger
- * /api/payment-integration/create-payment:
+ * /api/pay/create-payment:
  *   post:
  *     tags: [Payment Integration]
  *     summary: Create a payment with Flutterwave
  *     description: Initiate a payment through Flutterwave payment gateway using various methods
- *     security:
- *       - BearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -148,7 +169,7 @@ const {
  *                   name: 'Test User'
  *     responses:
  *       200:
- *         description: Payment initiated successfully
+ *         description: Payment initiated successfully (returns Flutterwave response)
  *         content:
  *           application/json:
  *             schema:
@@ -168,13 +189,11 @@ router.post("/create-payment", createPayment);
 
 /**
  * @swagger
- * /api/payment-integration/check-status:
+ * /api/pay/check-status:
  *   post:
  *     tags: [Payment Integration]
  *     summary: Check payment status by transaction reference
  *     description: Verify the current status of a payment using transaction reference
- *     security:
- *       - BearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -185,7 +204,7 @@ router.post("/create-payment", createPayment);
  *             check_status:
  *               summary: Check payment status
  *               value:
- *                 tx_ref: 'KP-REF-1697616000123'
+ *                 tx_ref: 'tx-1697616000123'
  *     responses:
  *       200:
  *         description: Payment status retrieved successfully
@@ -208,7 +227,7 @@ router.post("/check-status", checkStatus);
 
 /**
  * @swagger
- * /api/payment-integration/handle-redirect:
+ * /api/pay/handle-redirect:
  *   post:
  *     tags: [Payment Integration]
  *     summary: Handle payment redirect callback
@@ -220,12 +239,12 @@ router.post("/check-status", checkStatus);
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/RedirectRequest'
+ *             $ref: '#/components/schemas/RedirectVerificationRequest'
  *           examples:
  *             redirect_data:
- *               summary: Payment redirect data
+ *               summary: Payment redirect payload
  *               value:
- *                 tx_ref: 'KP-REF-1697616000123'
+ *                 tx_ref: 'tx-1697616000123'
  *     responses:
  *       200:
  *         description: Redirect handled successfully
@@ -254,13 +273,11 @@ router.post("/handle-redirect", protect, handleRedirect);
 
 /**
  * @swagger
- * /api/payment-integration/webhook:
+ * /api/pay/webhook:
  *   post:
  *     tags: [Payment Integration]
  *     summary: Handle payment webhooks
  *     description: Process webhook notifications from payment providers (requires verif-hash header)
- *     security:
- *       - BearerAuth: []
  *     parameters:
  *       - in: header
  *         name: verif-hash
@@ -281,7 +298,7 @@ router.post("/handle-redirect", protect, handleRedirect);
  *               value:
  *                 event: 'charge.completed'
  *                 data:
- *                   tx_ref: 'KP-REF-1697616000123'
+ *                   tx_ref: 'tx-1697616000123'
  *                   status: 'successful'
  *                   amount: 5000
  *     responses:

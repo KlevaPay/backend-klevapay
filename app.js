@@ -417,10 +417,14 @@ const swaggerOptions = {
       {
         name: 'Transactions',
         description: 'Transaction retrieval and analytics endpoints'
+      },
+      {
+        name: 'Crypto Integration',
+        description: 'On-chain liquidity management and settlement endpoints'
       }
     ]
   },
-  apis: ['./routes/transactionRoutes.js', './routes/merchantRoutes.js', './routes/paymentIntentRoute.js', './routes/paymentintegrationRoute.js']
+  apis: ['./routes/transactionRoutes.js', './routes/merchantRoutes.js', './routes/paymentIntentRoute.js', './routes/paymentintegrationRoute.js', './routes/cryptoIntegration.js']
 };
 
 // Generate swagger specification
