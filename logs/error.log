@@ -895,3 +895,10 @@
   environment: 'development',
   timestamp: '2025-10-19 00:03:44'
 }
+{
+  message: 'Pipe 4000 is already in use',
+  level: 'error',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 11:49:13'
+}
