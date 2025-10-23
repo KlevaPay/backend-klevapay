@@ -6506,3 +6506,392 @@
   requestId: 'kvrgvsbvr',
   timestamp: '2025-10-20 11:49:29'
 }
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:48'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 14:49:51'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  merchantId: new ObjectId("68f900cd48d9d8db845b31f2"),
+  reference: '1000Ref',
+  transactionHash: '0x078f5c8bc29e084cf563e864596a0dadfc6c155c9eba5d54ca0fa1a2178df356',
+  level: 'info',
+  message: 'Blockchain transaction recorded',
+  timestamp: '2025-10-23 14:50:16'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa3298f5803963ac01bb6e"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 14:50:17'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa3298f5803963ac01bb6e"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 14:50:17'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:19'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:02:22'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:11'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:03:13'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  merchantId: new ObjectId("68f8fdd105ece82c68ecc2ce"),
+  reference: '1000Ref',
+  level: 'info',
+  message: 'Blockchain transaction recorded',
+  timestamp: '2025-10-23 15:07:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 15:07:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 15:07:22'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:34'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:37'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:11:39'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:15:57'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:00'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '🛰️ PaymentRecorded listener initialized',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '🔔 PaymentRecorded blockchain listener registered',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 15:16:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  merchantId: new ObjectId("68f8fdd105ece82c68ecc2ce"),
+  reference: '1000Ref',
+  level: 'info',
+  message: 'Blockchain transaction recorded',
+  timestamp: '2025-10-23 15:20:28'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 15:20:30'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 15:20:30'
+}
+{
+  message: '📞 SIGINT signal received: closing HTTP server',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-23 17:27:50'
+}

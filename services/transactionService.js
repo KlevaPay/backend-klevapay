@@ -49,22 +49,6 @@ function cleanObject(obj) {
     }, {});
 }
 
-function determineFiatOrTokenType(paymentType, tokenSymbol) {
-  const paymentTypeUpper = paymentType ? paymentType.toUpperCase() : '';
-
-  if (paymentTypeUpper.includes('FIAT')) return 'FIAT';
-  if (paymentTypeUpper.includes('CRYPTO')) return 'CRYPTO';
-
-  if (tokenSymbol) {
-    const symbolUpper = tokenSymbol.toUpperCase();
-    if (['USDT', 'USDC', 'BTC', 'ETH', 'WETH', 'WBTC'].includes(symbolUpper)) {
-      return 'CRYPTO';
-    }
-  }
-
-  return 'FIAT';
-}
-
 async function resolveMerchant({ merchantId, merchantWalletAddress }) {
   if (merchantId) {
     if (!mongoose.Types.ObjectId.isValid(merchantId)) {
@@ -106,11 +90,7 @@ class TransactionService {
       merchantWalletAddress,
       decimals = DEFAULT_CRYPTO_DECIMALS,
       fiatDecimals = DEFAULT_FIAT_DECIMALS,
-      network,
-      transactionHash,
-      blockNumber,
-      metadata: extraMetadata = {},
-      providerResponse
+      metadata: extraMetadata = {}
     } = options;
 
     if (!eventPayload || !eventPayload.txRef) {
@@ -122,10 +102,8 @@ class TransactionService {
       merchantWalletAddress: merchantWalletAddress || eventPayload.merchant
     });
 
-    const fiatOrTokenType = determineFiatOrTokenType(eventPayload.paymentType, eventPayload.tokenSymbol);
+    const normalizedCurrency = (eventPayload.tokenSymbol || 'USDT').toString().toUpperCase();
     const normalizedStatus = (eventPayload.status || 'PENDING').toString().toUpperCase();
-    const normalizedMethod = 'CRYPTO';
-    const normalizedCurrency = (eventPayload.tokenSymbol || eventPayload.paymentType || 'USDT').toString().toUpperCase();
 
     const update = cleanObject({
       merchantId: merchantContext.merchantId,
@@ -133,32 +111,23 @@ class TransactionService {
       reference: eventPayload.txRef,
       transactionReference: eventPayload.txRef,
       payer: normalizeAddress(eventPayload.payer),
-      fiatOrTokenType,
+      fiatOrTokenType: 'CRYPTO',
       paymentType: eventPayload.paymentType,
       amount: normalizeUnits(eventPayload.amount, decimals),
       amountInMinor: eventPayload.amount !== undefined ? eventPayload.amount.toString() : undefined,
       fiatEquivalent: normalizeUnits(eventPayload.fiatEquivalent, fiatDecimals),
-      fiatCurrency: eventPayload.fiatCurrency ? eventPayload.fiatCurrency.toUpperCase() : 'NGN',
       chargeFee: normalizeUnits(eventPayload.chargeFee, decimals) || 0,
       symbol: normalizedCurrency,
       currency: normalizedCurrency,
-      method: normalizedMethod,
+      method: 'CRYPTO',
       provider: 'CONTRACT',
       status: normalizedStatus,
       eventTimestamp: eventPayload.timestamp ? new Date(Number(eventPayload.timestamp) * 1000) : new Date(),
       recordedAt: new Date(),
-      blockchain: cleanObject({
-        transactionHash,
-        blockNumber,
-        network
-      }),
       metadata: {
         source: 'CONTRACT_EVENT',
-        paymentTypeRaw: eventPayload.paymentType,
-        statusRaw: eventPayload.status,
         ...extraMetadata
-      },
-      providerResponse: providerResponse || eventPayload
+      }
     });
 
     try {
@@ -170,8 +139,7 @@ class TransactionService {
 
       logger.info('Blockchain transaction recorded', {
         merchantId: merchantContext.merchantId,
-        reference: eventPayload.txRef,
-        transactionHash
+        reference: eventPayload.txRef
       });
 
       if (transaction?._id) {

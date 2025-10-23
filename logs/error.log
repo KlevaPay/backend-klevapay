@@ -902,3 +902,63 @@
   environment: 'development',
   timestamp: '2025-10-20 11:49:13'
 }
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa3298f5803963ac01bb6e"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 14:50:17'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa3298f5803963ac01bb6e"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 14:50:17'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 15:07:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 15:07:22'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Settlement failed',
+  timestamp: '2025-10-23 15:20:30'
+}
+{
+  service: 'klevapay-backend',
+  environment: 'development',
+  transactionId: new ObjectId("68fa369af5803963ac01bb6f"),
+  reference: '1000Ref',
+  error: 'Merchant is missing bank code/routing number required for payout',
+  level: 'error',
+  message: 'Failed to trigger settlement for blockchain transaction',
+  timestamp: '2025-10-23 15:20:30'
+}
