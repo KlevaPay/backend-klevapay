@@ -6511,6 +6511,349 @@
   level: 'info',
   service: 'klevapay-backend',
   environment: 'development',
+  timestamp: '2025-10-20 16:52:28'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 16:52:30'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 16:52:30'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 16:52:30'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 16:52:30'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 16:52:30'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:35'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:38'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:38'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:38'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:38'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:07:38'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:02'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:03'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:03'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:03'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:03'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:03'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:07'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:08'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:08'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:08'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:08'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:08'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:17'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:18'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:18'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:19'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:19'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:19'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:23'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:24'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:25'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:25'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:25'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:25'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:29'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:31'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:32'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:32'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:32'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:32'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:32'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:43'
+}
+{
+  message: '✅ Database connected successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:44'
+}
+{
+  message: '🎯 KlevaPay Backend API v1.0.0 started successfully',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:44'
+}
+{
+  message: '🚀 KlevaPay server listening on http://localhost:4000',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:44'
+}
+{
+  message: '📊 Environment: development',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:44'
+}
+{
+  message: '📝 API Documentation available at http://localhost:4000/api/docs',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
+  timestamp: '2025-10-20 17:08:44'
+}
+{
+  message: '🔌 Connecting to MongoDB...',
+  level: 'info',
+  service: 'klevapay-backend',
+  environment: 'development',
   timestamp: '2025-10-23 14:49:48'
 }
 {
