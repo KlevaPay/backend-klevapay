@@ -10,30 +10,30 @@ const ApiError = require('./lib/ApiError');
 const logger = require('./lib/logger');
 const connectDB = require('./config/connectDb');
 
-// async function startBlockchainListener() {
-//   if (globalThis.__KLEVAPAY_PAYMENT_LISTENER__) {
-//     return globalThis.__KLEVAPAY_PAYMENT_LISTENER__;
-//   }
+async function startBlockchainListener() {
+  if (globalThis.__KLEVAPAY_PAYMENT_LISTENER__) {
+    return globalThis.__KLEVAPAY_PAYMENT_LISTENER__;
+  }
 
-//   try {
-//     const CryptoIntegrationService = require('./services/cryptoIntegration');
-//     const cryptoService = new CryptoIntegrationService();
-//     const unsubscribe = cryptoService.startPaymentRecordedPersistence();
+  try {
+    const CryptoIntegrationService = require('./services/cryptoIntegration');
+    const cryptoService = new CryptoIntegrationService();
+    const unsubscribe = cryptoService.startPaymentRecordedPersistence();
 
-//     globalThis.__KLEVAPAY_PAYMENT_LISTENER__ = {
-//       service: cryptoService,
-//       unsubscribe
-//     };
+    globalThis.__KLEVAPAY_PAYMENT_LISTENER__ = {
+      service: cryptoService,
+      unsubscribe
+    };
 
-//     logger.info('🔔 PaymentRecorded blockchain listener registered');
-//   } catch (err) {
-//     logger.warn('⚠️ Skipping blockchain listener initialization', {
-//       error: err.message
-//     });
-//   }
+    logger.info('🔔 PaymentRecorded blockchain listener registered');
+  } catch (err) {
+    logger.warn('⚠️ Skipping blockchain listener initialization', {
+      error: err.message
+    });
+  }
 
-//   return globalThis.__KLEVAPAY_PAYMENT_LISTENER__;
-// }
+  return globalThis.__KLEVAPAY_PAYMENT_LISTENER__;
+}
 
 
 // ================================================================
@@ -121,11 +121,11 @@ function serverListening() {
     logger.info(`🎯 KlevaPay Backend API v1.0.0 started successfully`);
 
     // Initialize blockchain listener (non-blocking)
-    // startBlockchainListener().catch((err) => {
-    //   logger.warn('⚠️ Blockchain listener failed to initialize', {
-    //     error: err.message
-    //   });
-    // });
+    startBlockchainListener().catch((err) => {
+      logger.warn('⚠️ Blockchain listener failed to initialize', {
+        error: err.message
+      });
+    });
     
   } catch (err) {
     // Log startup errors
