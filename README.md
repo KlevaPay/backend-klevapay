@@ -334,4 +334,5 @@ npm start
 
 ---
 
-Built with ❤️ by the KlevaPay engineering team.
+Built with by the KlevaPay engineering team.
+(c) V1 - 2025
